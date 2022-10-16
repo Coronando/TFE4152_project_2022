@@ -1,0 +1,26 @@
+[aimspice]
+[description]
+253
+Test 3
+
+.include Resources\gpdk90nm\gpdk90nm_tt.cir
+
+
+*Vdd 1 0 pulse(0 1 1ns 1ns 1ns 50us 10us)
+V1 3 0 PULSE(0 2 0uS 0.1uS 0.1uS 0.5uS 2uS)
+V2 4 0 PULSE(0 2 0uS 0.1uS 0.1uS 1.7uS 4uS)
+
+R1 3 0 100k
+R2 4 0 100k
+
+.plot V(R1) V(R2)
+*.plot V(R2)
+[tran]
+0.01us
+10us
+X
+X
+0
+[ana]
+4 0
+[end]

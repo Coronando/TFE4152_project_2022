@@ -1,0 +1,26 @@
+[aimspice]
+[description]
+357
+SR-Latch test file
+.include Resources\gpdk90nm\gpdk90nm_tt.cir
+.include Subcircuits\initial_nand.cir
+
+Vdd 1 0 DC 1.0V
+Vdd_2 2 0 DC 1.1V
+
+XTop_nand reset q_not q 1 0 NAND
+XBottom_nand set q q_not 2 0 NAND
+
+V_input_a reset 0 pulse(0 0.9 1ns 1ns 1ns 5us 10us)
+V_input_b set 0 pulse(0 0.8 1ns 1ns 1ns 10us 40us)
+
+.plot V(reset) V(set) V(q) V(q_not)
+[tran]
+0.01us
+50us
+X
+X
+0
+[ana]
+4 0
+[end]

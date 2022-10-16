@@ -2,9 +2,9 @@
 
 
 *subcurcuit nand gate
-.subckt nand input_a input_b out
+.subckt nand input_a input_b v_out v_main gnd
 
-Vdd v_main gnd DC 1.0V
+*Vdd v_main gnd DC 1.0V
 
 *PMOS params
 .param L_pmos = 100n
@@ -21,4 +21,5 @@ XM_Bpmos v_main input_b v_out v_main pmos1v L=L_pmos W=W_pmos
 XM_Anmos v_out input_a gnd gnd nmos1v L=L_nmos W=W_nmos
 XM_Bnmos v_out input_b gnd gnd nmos1v L=L_nmos W=W_nmos
 
+*End of subcircuit
 .ends nand

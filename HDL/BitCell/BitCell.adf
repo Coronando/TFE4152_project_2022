@@ -34,3 +34,9 @@ BitCell=.
 Active_lib=
 [IMPLEMENTATION]
 UCF=
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+[SpecTracer]
+WindowVisible=0

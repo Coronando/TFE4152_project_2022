@@ -1,24 +1,32 @@
 [aimspice]
 [description]
-513
+546
 Project by Sindre Nordtveit and Mathias Bjoonnes
 
 *Include the gpdk90nm_tt to your project
 .include Resources\gpdk90nm\gpdk90nm_tt.cir
 
-
 *Include subcircuits
 .include Subcircuits\initial_nand.cir
 
+*Power for the NAND GATE
 Vdd 1 0 DC 1.0V
 
 *Define the nand gate
 XNAND input_a input_b out 1 0 NAND
 
 *Clock signal for the input_a and input_b
-Vclk_a input_a 0 pulse(0 1 1ns 1ns 1ns 5us 10us)
-Vclk_b input_b 0 pulse(0 1 1ns 1ns 1ns 10us 20us)
+Vclk_a input_a 0 PULSE(0 2 0uS 0.1uS 0.1uS 0.5uS 2uS)
+Vclk_b input_b 0 PULSE(0 2 0uS 0.1uS 0.1uS 1.7uS 4uS)
 
 *plot the voltage on input_a, input_b and out
 .plot V(input_a) V(input_b) V(out)
+[tran]
+0.01us
+10us
+X
+X
+0
+[ana]
+4 0
 [end]
