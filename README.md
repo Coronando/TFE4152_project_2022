@@ -2,6 +2,7 @@
 A psudoscientific gathering of bullshit.
 
 - [TFE4152_project_2022](#tfe4152_project_2022)
+  - [File structure:](#file-structure)
   - [How do I even use this code?](#how-do-i-even-use-this-code)
   - [What the fuck is Git and why is Sindre forcing me to use it?](#what-the-fuck-is-git-and-why-is-sindre-forcing-me-to-use-it)
     - [Make and account](#make-and-account)
@@ -16,6 +17,9 @@ A psudoscientific gathering of bullshit.
   - [Todo:](#todo)
   - [AIM-Spice:](#aim-spice)
   - [HDL:](#hdl)
+
+## File structure:
+Fuck it, I'll do it later.
 
 ## How do I even use this code?
 All of the code lives in the GitHub repo: [TFE4152_project_2022](https://github.com/Coronando/TFE4152_project_2022). You can choose to clone it to your own machine, but I would rather you put it on your *Hjemmeområde*. In addition, to simplyfy further, I've made a *Personlig Gruppe* called "stud_tfe4152gr60". If you want to access either, the instructions should be clear on [Insidas aricle on "koble til nettverksområde med Mac OS X"](https://i.ntnu.no/wiki/-/wiki/Norsk/Koble+til+nettverksomr%C3%A5de+med+Mac+OS+X). Alternative operating systems have their own guide, just use Google or ask me.
