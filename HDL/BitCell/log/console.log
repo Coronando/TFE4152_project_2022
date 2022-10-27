@@ -1,8 +1,1387 @@
-# Design: Design BitCell already active.
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2000 simple_nand_test_bench.sv : (4, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2000 simple_nand_test_bench.sv : (3, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2000 simple_nand_test_bench.sv : (3, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2571 simple_nand_test_bench.sv : (4, 13): Instantiations must have brackets (): b.
+# Error: VCP2571 simple_nand_test_bench.sv : (5, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 simple_nand_test_bench.sv : (15, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (3, 13): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 3 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2000 simple_nand_test_bench.sv : (5, 16): Syntax error. Unexpected token: t[_IDENTIFIER]. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 simple_nand_test_bench.sv : (15, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (3, 15): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (5, 17): Undefined module: t was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2000 simple_nand_test_bench.sv : (15, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (3, 15): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (11, 7): Undefined module: SimpleNand was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2000 simple_nand_test_bench.sv : (7, 15): Syntax error. Unexpected token: SimpleNand[_IDENTIFIER]. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 simple_nand_test_bench.sv : (15, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (3, 15): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (11, 7): Undefined module: SimpleNand was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2000 simple_nand_test_bench.sv : (15, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (3, 15): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (6, 25): Undefined module: import was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (11, 7): Undefined module: SimpleNand was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 3 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2571 simple_nand_test_bench.sv : (3, 13): Instantiations must have brackets (): a.
+# Error: VCP2571 simple_nand_test_bench.sv : (4, 13): Instantiations must have brackets (): b.
+# Error: VCP2571 simple_nand_test_bench.sv : (5, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 simple_nand_test_bench.sv : (15, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (6, 25): Undefined module: import was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (11, 7): Undefined module: SimpleNand was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 4 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2571 simple_nand_test_bench.sv : (3, 13): Instantiations must have brackets (): a.
+# Error: VCP2571 simple_nand_test_bench.sv : (3, 15): Instantiations must have brackets (): b.
+# Error: VCP2571 simple_nand_test_bench.sv : (4, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 simple_nand_test_bench.sv : (14, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (5, 25): Undefined module: import was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (10, 7): Undefined module: SimpleNand was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 4 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2571 simple_nand_test_bench.sv : (3, 13): Instantiations must have brackets (): a.
+# Error: VCP2571 simple_nand_test_bench.sv : (3, 15): Instantiations must have brackets (): b.
+# Error: VCP2571 simple_nand_test_bench.sv : (4, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 simple_nand_test_bench.sv : (13, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 simple_nand_test_bench.sv : (5, 25): Undefined module: import was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 simple_nand_test_bench.sv : (9, 20): Undefined module: SimpleNand was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 4 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/verliog_test.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2640 No modules defined.
+# Running Optimizer.
+# ELB/DAG code generating.
+# $root top modules: *none*.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNand.
+# $root top modules: SimpleNand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 simple_nand_module.v : (3, 13): Instantiations must have brackets (): a.
+# Error: VCP2571 simple_nand_module.v : (3, 15): Instantiations must have brackets (): b.
+# Error: VCP2571 simple_nand_module.v : (4, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 simple_nand_module.v : (12, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNand.
+# $root top modules: SimpleNand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv $dsn/src/simple_nand_test_bench.sv $dsn/src/verliog_test.v $dsn/src/simple_nand_module.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 simple_nand_test_bench.sv : (4, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 simple_nand_test_bench.sv : (12, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP7801 verliog_test.v : (2, 27): Duplicated declaration of unit SimpleNandTestBench.
+# Info: VCP7802 simple_nand_test_bench.sv : (2, 27): SimpleNandTestBench was already declared. See previous declaration.
+# Error: VCP2571 verliog_test.v : (3, 13): Instantiations must have brackets (): a.
+# Error: VCP2571 verliog_test.v : (3, 15): Instantiations must have brackets (): b.
+# Error: VCP2571 verliog_test.v : (4, 15): Instantiations must have brackets (): out.
+# Error: VCP2505 verliog_test.v : (8, 20): Duplicate identifier: MyNand
+# Error: VCP2000 verliog_test.v : (12, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2505 simple_nand_module.v : (1, 18): Duplicate identifier: SimpleNand
+# Error: VCP2562 simple_nand_module.v : (2, 5): Redeclaration of port ina.
+# Error: VCP2562 simple_nand_module.v : (2, 5): Redeclaration of port inb.
+# Error: VCP2562 simple_nand_module.v : (3, 5): Redeclaration of port out.
+# Warning: VCP2515 simple_nand_test_bench.sv : (3, 13): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 12 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/verliog_test.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 verliog_test.v : (3, 13): Instantiations must have brackets (): a.
+# Error: VCP2571 verliog_test.v : (3, 15): Instantiations must have brackets (): b.
+# Error: VCP2571 verliog_test.v : (4, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 verliog_test.v : (12, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNand.
+# $root top modules: SimpleNand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/verliog_test.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 verliog_test.v : (3, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/verliog_test.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 verliog_test.v : (4, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/verliog_test.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 verliog_test.v : (4, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNand.
+# $root top modules: SimpleNand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (3, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 simple_nand_test_bench.sv : (3, 13): Instantiations must have brackets (): a.
+# Error: VCP2571 simple_nand_test_bench.sv : (3, 15): Instantiations must have brackets (): b.
+# Error: VCP2571 simple_nand_test_bench.sv : (4, 15): Instantiations must have brackets (): out.
+# Error: VCP2000 simple_nand_test_bench.sv : (12, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (10, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (11, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (11, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (11, 34): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 simple_nand_test_bench.sv : (13, 34): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 simple_nand_test_bench.sv : (15, 34): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 simple_nand_test_bench.sv : (17, 34): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (11, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_test_bench.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (11, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (17, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (18, 13): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (20, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2020 mux.sv : (21, 8): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 mux.sv : (21, 8): Syntax error. Unexpected token: end[_END]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (19, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (19, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (19, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (19, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell -c $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (19, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/simple_nand_module.sv $dsn/src/simple_nand_test_bench.sv $dsn/src/verliog_test.v $dsn/src/simple_nand_module.v $dsn/src/test.sv $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 simple_nand_test_bench.sv : (11, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP7801 verliog_test.v : (2, 27): Duplicated declaration of unit SimpleNandTestBench.
+# Info: VCP7802 simple_nand_test_bench.sv : (2, 27): SimpleNandTestBench was already declared. See previous declaration.
+# Error: VCP2000 verliog_test.v : (4, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Error: VCP7801 test.sv : (1, 18): Duplicated declaration of unit SimpleNand.
+# Info: VCP7802 simple_nand_module.v : (1, 18): SimpleNand was already declared. See previous declaration.
+# Error: VCP2562 test.sv : (2, 5): Redeclaration of port ina.
+# Error: VCP2562 test.sv : (2, 5): Redeclaration of port inb.
+# Error: VCP2562 test.sv : (3, 5): Redeclaration of port out.
+# Error: VCP2000 test.sv : (17, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (19, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 10 Errors 0 Warnings  Analysis time: 1[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 32): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (19, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 31): Syntax error. Unexpected token: in0[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (16, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (2, 20): Syntax error. Unexpected token: ina[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 test.sv : (3, 21): Syntax error. Unexpected token: out[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2565 test.sv : (1, 19): Undefined direction of external port out.
+# Error: VCP2567 test.sv : (1, 19): Undefined direction of internal port out.
+# Error: VCP2565 test.sv : (1, 24): Undefined direction of external port ina.
+# Error: VCP2567 test.sv : (1, 24): Undefined direction of internal port ina.
+# Error: VCP2000 test.sv : (17, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 test.sv : (2, 21): Undefined module: ina was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 test.sv : (3, 22): Undefined module: out was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 7 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (2, 20): Syntax error. Unexpected token: ina[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 test.sv : (3, 25): Syntax error. Unexpected token: nandout[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2565 test.sv : (1, 19): Undefined direction of external port out.
+# Error: VCP2567 test.sv : (1, 19): Undefined direction of internal port out.
+# Error: VCP2565 test.sv : (1, 24): Undefined direction of external port ina.
+# Error: VCP2567 test.sv : (1, 24): Undefined direction of internal port ina.
+# Error: VCP2000 test.sv : (17, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 test.sv : (2, 21): Undefined module: ina was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 test.sv : (3, 26): Undefined module: nandout was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 7 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (2, 20): Syntax error. Unexpected token: ina[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2562 test.sv : (2, 26): Redeclaration of port inb.
+# Error: VCP2000 test.sv : (3, 25): Syntax error. Unexpected token: nandout[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 test.sv : (17, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 test.sv : (2, 21): Undefined module: ina was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 test.sv : (3, 26): Undefined module: nandout was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 4 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (15, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (6, 20): Syntax error. Unexpected token: ina[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 test.sv : (7, 20): Syntax error. Unexpected token: inb[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 test.sv : (8, 21): Syntax error. Unexpected token: out[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 test.sv : (9, 23): Syntax error. Unexpected token: '. Expected tokens: '?' , '->' , '<->' , '||' , '&&' ... .
+# Error: VCP2565 test.sv : (5, 22): Undefined direction of external port out.
+# Error: VCP2567 test.sv : (5, 22): Undefined direction of internal port out.
+# Error: VCP2565 test.sv : (5, 27): Undefined direction of external port ina.
+# Error: VCP2567 test.sv : (5, 27): Undefined direction of internal port ina.
+# Error: VCP2565 test.sv : (5, 32): Undefined direction of external port inb.
+# Error: VCP2567 test.sv : (5, 32): Undefined direction of internal port inb.
+# Error: VCP2000 test.sv : (24, 33): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 test.sv : (6, 21): Undefined module: ina was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 test.sv : (7, 21): Undefined module: inb was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 test.sv : (8, 22): Undefined module: out was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 11 Errors 3 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (1, 52): Syntax error. Unexpected token: sel[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2000 mux.sv : (16, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2030 mux.sv : (3, 20): Mismatched block-end name: Mux2Tool. The current block name is: Mux2to1.
+# Error: VCP2000 mux.sv : (6, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Error: VCP2000 mux.sv : (16, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (6, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Error: VCP2000 mux.sv : (16, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (6, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 mux.sv : (7, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2571 mux.sv : (8, 13): Instantiations must have brackets (): s.
+# Error: VCP2571 mux.sv : (8, 15): Instantiations must have brackets (): c.
+# Error: VCP2000 mux.sv : (13, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (16, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 6 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (6, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 mux.sv : (7, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 mux.sv : (13, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (16, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 mux.sv : (8, 17): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 4 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (6, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 mux.sv : (7, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2571 mux.sv : (8, 13): Instantiations must have brackets (): s.
+# Error: VCP2571 mux.sv : (9, 13): Instantiations must have brackets (): c.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 6 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (6, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 mux.sv : (7, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 mux.sv : (8, 15): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 4 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 mux.sv : (6, 16): Syntax error. Unexpected token: input[_INPUT]. Expected tokens: ':' , '#' , '(' , ',' , ';' ... .
+# Error: VCP2570 mux.sv : (6, 11): Undefined port: a.
+# Error: VCP2000 mux.sv : (7, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 mux.sv : (8, 15): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 5 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 mux.sv : (6, 16): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 mux.sv : (7, 16): Instantiations must have brackets (): tb_b.
+# Error: VCP2571 mux.sv : (8, 16): Instantiations must have brackets (): tb_s.
+# Error: VCP2571 mux.sv : (9, 16): Instantiations must have brackets (): tb_c.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 6 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 mux.sv : (7, 16): Instantiations must have brackets (): tb_b.
+# Error: VCP2571 mux.sv : (8, 16): Instantiations must have brackets (): tb_s.
+# Error: VCP2571 mux.sv : (9, 16): Instantiations must have brackets (): tb_c.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 mux.sv : (6, 18): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 5 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 mux.sv : (7, 16): Instantiations must have brackets (): tb_b.
+# Error: VCP2571 mux.sv : (8, 16): Instantiations must have brackets (): tb_s.
+# Error: VCP2571 mux.sv : (9, 16): Instantiations must have brackets (): tb_c.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 mux.sv : (6, 17): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 5 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 mux.sv : (7, 16): Instantiations must have brackets (): tb_b.
+# Error: VCP2571 mux.sv : (8, 16): Instantiations must have brackets (): tb_s.
+# Error: VCP2571 mux.sv : (9, 16): Instantiations must have brackets (): tb_c.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 mux.sv : (6, 18): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 5 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 mux.sv : (6, 16): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 mux.sv : (7, 16): Instantiations must have brackets (): tb_b.
+# Error: VCP2571 mux.sv : (8, 16): Instantiations must have brackets (): tb_s.
+# Error: VCP2571 mux.sv : (9, 16): Instantiations must have brackets (): tb_c.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 6 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/mux.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 mux.sv : (7, 16): Instantiations must have brackets (): tb_b.
+# Error: VCP2571 mux.sv : (8, 16): Instantiations must have brackets (): tb_s.
+# Error: VCP2571 mux.sv : (9, 16): Instantiations must have brackets (): tb_c.
+# Error: VCP2000 mux.sv : (14, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 mux.sv : (17, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 mux.sv : (6, 20): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 5 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNand.
+# $root top modules: SimpleNand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 test.sv : (7, 13): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Error: VCP2571 test.sv : (7, 12): Instantiations must have brackets (): a.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 test.sv : (7, 13): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Error: VCP2571 test.sv : (7, 12): Instantiations must have brackets (): a.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 test.sv : (7, 14): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (7, 12): Implicit net declaration, symbol a has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNand SimpleNandTestBench.
+# $root top modules: SimpleNand SimpleNandTestBench.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNand SimpleNandTestBench.
+# $root top modules: SimpleNand SimpleNandTestBench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 test.sv : (7, 13): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Error: VCP2571 test.sv : (7, 12): Instantiations must have brackets (): o.
+# Error: VCP2571 test.sv : (7, 15): Instantiations must have brackets (): a.
+# Error: VCP2571 test.sv : (7, 18): Instantiations must have brackets (): b.
+# Compile failure 3 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (8, 20): Instantiations must have brackets (): outgoing.
+# Error: VCP2571 test.sv : (8, 26): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 test.sv : (8, 32): Instantiations must have brackets (): tb_b.
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 test.sv : (8, 22): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (8, 20): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Error: VCP2571 test.sv : (8, 27): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 test.sv : (8, 33): Instantiations must have brackets (): tb_b.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 1[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (8, 6): Syntax error. Unexpected token: (. Expected tokens: 'timeprecision' , 'timeunit' , ';' , 'always' , 'and' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (8, 20): Instantiations must have brackets (): outgoing.
+# Error: VCP2571 test.sv : (9, 16): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 test.sv : (10, 16): Instantiations must have brackets (): tb_b.
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (8, 20): Instantiations must have brackets (): outgoing.
+# Error: VCP2571 test.sv : (9, 16): Instantiations must have brackets (): tb_a.
+# Warning: VCP2515 test.sv : (10, 18): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (9, 16): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 test.sv : (10, 16): Instantiations must have brackets (): tb_b.
+# Warning: VCP2515 test.sv : (8, 20): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (9, 16): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 test.sv : (10, 16): Instantiations must have brackets (): tb_b.
+# Warning: VCP2515 test.sv : (8, 20): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (9, 6): Syntax error. Unexpected token: (. Expected tokens: 'endmodule' , ';' , 'always' , 'and' , 'assign' ... .
+# Warning: VCP2515 test.sv : (8, 20): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (8, 6): Syntax error. Unexpected token: (. Expected tokens: 'timeprecision' , 'timeunit' , ';' , 'always' , 'and' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (9, 16): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 test.sv : (10, 16): Instantiations must have brackets (): tb_b.
+# Warning: VCP2515 test.sv : (8, 20): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (8, 20): Instantiations must have brackets (): outgoing.
+# Error: VCP2571 test.sv : (9, 16): Instantiations must have brackets (): tb_a.
+# Error: VCP2571 test.sv : (10, 16): Instantiations must have brackets (): tb_b.
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module SimpleNand found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (11, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (11, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (11, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNandTestBench.
+# $root top modules: SimpleNandTestBench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (11, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (11, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (11, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNandTestBench.
+# $root top modules: SimpleNandTestBench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (16, 39): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (20, 39): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (24, 39): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (28, 39): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (16, 38): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (20, 38): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (24, 38): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (28, 38): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (16, 39): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (20, 39): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (24, 38): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 test.sv : (28, 38): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (11, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (11, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (11, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2858 test.sv : (13, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (14, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (17, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (18, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (21, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (22, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (25, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (26, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Compile failure 8 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2571 test.sv : (10, 16): Instantiations must have brackets (): tb_b.
+# Warning: VCP2515 test.sv : (9, 16): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
 # 
-# DESIGN: Default Design Language: VERILOG
-# DESIGN: Default BDE Language: VERILOG
-# DESIGN: C-Synthesis: Not Defined
-# DESIGN: HDL Synthesis: Not Defined
-# DESIGN: Physical Synthesis: Not Defined
-# DESIGN: Implementation: Not Defined
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (11, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2858 test.sv : (13, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (14, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (17, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (18, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (21, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (22, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (25, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (26, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Compile failure 8 Errors 0 Warnings  Analysis time: 0[s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 2.9 [s]
+# SLP: Finished : 2.9 [s]
+# SLP: 1 (100.00%) primitives and 0 other processes in SLP
+# SLP: 6 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 3.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5268 kB (elbread=1023 elab2=4099 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\BitCell\src\wave.asdb
+#  22.38, mandag 17. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: SimpleNandTestBench (SimpleNandTestBench)
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (100.00%) primitives and 0 other processes in SLP
+# SLP: 6 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5268 kB (elbread=1023 elab2=4099 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\BitCell\src\wave.asdb
+#  22.39, mandag 17. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: SimpleNandTestBench (SimpleNandTestBench)
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (9, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2000 test.sv : (11, 15): Syntax error. Unexpected token: tb_a[_IDENTIFIER]. Expected tokens: ':' , '(' , '.' , ';' , '=' ... .
+# Error: VCP2804 test.sv : (11, 19): Task name expected: tb_a.
+# Error: VCP2000 test.sv : (12, 15): Syntax error. Unexpected token: tb_b[_IDENTIFIER]. Expected tokens: ':' , '(' , '.' , ';' , '=' ... .
+# Error: VCP2804 test.sv : (12, 19): Task name expected: tb_b.
+# Error: VCP2858 test.sv : (13, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (14, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (17, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (18, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (21, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (22, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (25, 20): tb_a is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 test.sv : (26, 20): tb_b is not a valid left-hand side of a procedural assignment.
+# Compile failure 12 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (9, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNandTestBench.
+# $root top modules: SimpleNandTestBench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (9, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Warning: VCP2605 test.sv : (9, 1): Port connection for port out violates IEEE 1364. Only net expression can be connected to output/inout port.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNandTestBench.
+# $root top modules: SimpleNandTestBench.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 test.sv : (8, 20): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Error: VCP2571 test.sv : (8, 19): Instantiations must have brackets (): outgoing.
+# Info: VCP2876 test.sv : (9, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+# Error: You do not have valid license to run C Code Debug.
+# Error: Contact Aldec for ordering information sales@aldec.com
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (8, 11): Syntax error. Unexpected token: [. Expected tokens: ':' , '#' , '(' , ',' , ';' ... .
+# Warning: VCP2515 test.sv : (8, 25): Undefined module: outgoing was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Error: VCP2000 test.sv : (8, 20): Syntax error. Unexpected token: ;. Expected tokens: '(' , ':' , 'full_case' , 'parallel_case' , 'parallel_case full_case' ... .
+# Info: VCP2876 test.sv : (9, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+endsim
+#  Simulation has been stopped
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (9, 15): Syntax error. Unexpected token: SimpleNand[_IDENTIFIER]. Expected tokens: ':' , '(' , '.' , ';' , '=' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (9, 15): Syntax error. Unexpected token: SimpleNand[_IDENTIFIER]. Expected tokens: ':' , '(' , '.' , ';' , '=' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (9, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNandTestBench.
+# $root top modules: SimpleNandTestBench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0036 Unresolved hierarchical reference to "assert./0/" from module "SimpleNandTestBench" (module not found).
+# ELAB2: Last instance before error: /SimpleNandTestBench
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+#  Simulation has been stopped
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 test.sv : (9, 32): Implicit net declaration, symbol outgoing has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 43): Implicit net declaration, symbol tb_a has not been declared in module SimpleNandTestBench.
+# Info: VCP2876 test.sv : (9, 54): Implicit net declaration, symbol tb_b has not been declared in module SimpleNandTestBench.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: SimpleNandTestBench.
+# $root top modules: SimpleNandTestBench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0036 Unresolved hierarchical reference to "assert./0/" from module "SimpleNandTestBench" (module not found).
+# ELAB2: Last instance before error: /SimpleNandTestBench
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+#  Simulation has been stopped
+alog -O2 -sve   -work BitCell -c $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (2, 19): Syntax error. Unexpected token: y[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (2, 19): Syntax error. Unexpected token: y[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (1, 53): Syntax error. Unexpected token: y[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+# Design: Design "BitCell" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve   -work BitCell $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (12, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Error: VCP2000 muxtest.sv : (21, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (12, 10): Syntax error. Unexpected token: logic[_IDENTIFIER]. Expected tokens: '#' , 'import' , '(' , ';'.
+# Error: VCP2000 muxtest.sv : (21, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (12, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 muxtest.sv : (13, 14): Syntax error. Unexpected token: =. Expected tokens: '[' , '(' , ',' , ';'.
+# Error: VCP2000 muxtest.sv : (18, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Error: VCP2000 muxtest.sv : (21, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Warning: VCP2515 muxtest.sv : (14, 13): Undefined module: logic was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 4 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/test.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 test.sv : (11, 13): Syntax error. Unexpected token: wire[_WIRE]. Expected tokens: ':' , '#' , ''' , '(' , ';' ... .
+# Error: VCP2020 test.sv : (29, 8): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 test.sv : (29, 8): Syntax error. Unexpected token: end[_END]. Expected tokens: 'endmodule' , ';' , 'always' , 'and' , 'assign' ... .
+# Compile failure 3 Errors 0 Warnings  Analysis time: 1[s].
+alog -O2 -sve   -work BitCell $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (1, 28): Syntax error. Unexpected token: output[_OUTPUT]. Expected tokens: '[' , ')' , ',' , '.' , 'full_case' ... .
+# Error: VCP2000 muxtest.sv : (5, 8): Syntax error. Unexpected token: and[_AND]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Error: VCP2000 muxtest.sv : (21, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/muxtest.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 muxtest.sv : (1, 28): Syntax error. Unexpected token: output[_OUTPUT]. Expected tokens: '[' , ')' , ',' , '.' , 'full_case' ... .
+# Error: VCP2000 muxtest.sv : (5, 8): Syntax error. Unexpected token: and[_AND]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Error: VCP2000 muxtest.sv : (21, 32): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/multiplexer.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 multiplexer.sv : (2, 26): Syntax error. Unexpected token: select[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '=' ... .
+# Error: VCP2000 multiplexer.sv : (3, 21): Syntax error. Unexpected token: d[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '=' ... .
+# Error: VCP2000 multiplexer.sv : (4, 16): Syntax error. Unexpected token: q[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Error: VCP2565 multiplexer.sv : (1, 24): Undefined direction of external port select.
+# Error: VCP2567 multiplexer.sv : (1, 24): Undefined direction of internal port select.
+# Error: VCP2565 multiplexer.sv : (1, 32): Undefined direction of external port d.
+# Error: VCP2567 multiplexer.sv : (1, 32): Undefined direction of internal port d.
+# Error: VCP2565 multiplexer.sv : (1, 35): Undefined direction of external port q.
+# Error: VCP2567 multiplexer.sv : (1, 35): Undefined direction of internal port q.
+# Warning: VCP2515 multiplexer.sv : (2, 27): Undefined module: select was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 multiplexer.sv : (3, 22): Undefined module: d was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 multiplexer.sv : (4, 17): Undefined module: q was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 9 Errors 3 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/multiplexer.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 multiplexer.sv : (2, 26): Syntax error. Unexpected token: select[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '=' ... .
+# Error: VCP2000 multiplexer.sv : (3, 21): Syntax error. Unexpected token: d[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '=' ... .
+# Error: VCP2000 multiplexer.sv : (4, 16): Syntax error. Unexpected token: q[_IDENTIFIER]. Expected tokens: '[' , ')' , ',' , ';' , '='.
+# Warning: VCP2515 multiplexer.sv : (2, 27): Undefined module: select was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 multiplexer.sv : (3, 22): Undefined module: d was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 multiplexer.sv : (4, 17): Undefined module: q was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 3 Errors 3 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work BitCell $dsn/src/multiplexer.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Error: VCP5112 multiplexer.sv : (9, 34): select is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (10, 34): select is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (12, 47): d is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (13, 24): select is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (13, 45): d is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (14, 40): select is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (14, 47): d is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (15, 24): select is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (15, 38): select is not a vector or array.
+# Error: VCP5112 multiplexer.sv : (15, 45): d is not a vector or array.
+# Compile failure 10 Errors 0 Warnings  Analysis time: 0[s].
+# Error: You do not have valid license to run C Code Debug.
+# Error: Contact Aldec for ordering information sales@aldec.com
+# Error: You do not have valid license to run C Code Debug.
+# Error: Contact Aldec for ordering information sales@aldec.com
+alog -O2 -sve   -work BitCell $dsn/src/multiplexer.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: mux_gate_level.
+# $root top modules: SimpleNandTestBench mux_gate_level.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0036 Unresolved hierarchical reference to "assert./0/" from module "SimpleNandTestBench" (module not found).
+# ELAB2: Last instance before error: /SimpleNandTestBench
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+#  Simulation has been stopped
+alog -O2 -sve   -work BitCell $dsn/src/multiplexer.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: mux_gate_level.
+# $root top modules: SimpleNandTestBench mux_gate_level.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0036 Unresolved hierarchical reference to "assert./0/" from module "SimpleNandTestBench" (module not found).
+# ELAB2: Last instance before error: /SimpleNandTestBench
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+#  Simulation has been stopped
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0036 Unresolved hierarchical reference to "assert./0/" from module "SimpleNandTestBench" (module not found).
+# ELAB2: Last instance before error: /SimpleNandTestBench
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+#  Simulation has been stopped
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0036 Unresolved hierarchical reference to "assert./0/" from module "SimpleNandTestBench" (module not found).
+# ELAB2: Last instance before error: /SimpleNandTestBench
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+#  Simulation has been stopped
+alog -O2 -sve   -work BitCell $dsn/src/multiplexer.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: mux_gate_level.
+# $root top modules: SimpleNandTestBench mux_gate_level.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim -O5 +access +r +m+SimpleNandTestBench SimpleNandTestBench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0036 Unresolved hierarchical reference to "assert./0/" from module "SimpleNandTestBench" (module not found).
+# ELAB2: Last instance before error: /SimpleNandTestBench
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+#  Simulation has been stopp

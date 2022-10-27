@@ -1,0 +1,44 @@
+[aimspice]
+[description]
+670
+SR-lach test
+
+*Include the gpdk90nm_tt to your project
+.include Resources\gpdk90nm\gpdk90nm_tt.cir
+
+*Set parameters
+*PMOS params
+.param L_pmos = 200n
+.param W_pmos = 200n
+*NMOS params
+.param L_nmos = 100n
+.param W_nmos = 100n
+
+*Include subcircuits
+.include Subcircuits\not_gate.cir
+.include Subcircuits\nand_gate.cir
+.include Subcircuits\and_gate.cir
+
+Vdd V_main 0 DC 1.0V
+
+Xupper set 	 q_not q 	 V_main 0 nand_gate
+Xlower reset q 	 q_not V_main 0 nand_gate
+
+
+Vclk_a set  0 pulse(0 1 20us 1ns 1ns 70us 100us)
+*Vclk_b reset 0 pulse(0 1 50us 1ns 1ns 100us 200us)
+Vtest reset 0 DC 1.0V
+
+.plot V(set) 
+.plot V(reset)
+.plot V(q) 
+.plot V(q_not)
+[tran]
+1ns
+800us
+X
+X
+0
+[ana]
+4 0
+[end]

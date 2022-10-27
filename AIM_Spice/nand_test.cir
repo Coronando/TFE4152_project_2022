@@ -1,0 +1,42 @@
+[aimspice]
+[description]
+630
+NAND Test
+
+*Include the gpdk90nm_tt to your project
+.include Resources\gpdk90nm\gpdk90nm_tt.cir
+
+*Set parameters
+*PMOS params
+.param L_pmos = 200n
+.param W_pmos = 200n
+*NMOS params
+.param L_nmos = 100n
+.param W_nmos = 100n
+
+*Include subcircuits
+.include Subcircuits\nand_gate.cir
+
+Vdd 1 0 DC 1.0V
+
+*Define the nand gate
+XNAND input_a input_b out 1 0 nand_gate
+
+*Clock signal for the input_a and input_b
+Vclk_a input_a 0 pulse(0 1.2 1ns 1ns 1ns 5us 10us)
+Vclk_b input_b 0 pulse(0 1.1 10us 1ns 1ns 10us 20us)
+
+*plot the voltage on input_a, input_b and out
+.plot V(input_a)
+.plot V(input_b)
+.plot V(out)
+
+[tran]
+0.01ns
+50us
+X
+X
+0
+[ana]
+4 0
+[end]

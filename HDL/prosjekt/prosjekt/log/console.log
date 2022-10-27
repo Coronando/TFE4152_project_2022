@@ -1,0 +1,512 @@
+# Design: Design prosjekt already active.
+# 
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: nand_gate.
+# $root top modules: nand_gate.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: nand_gate.
+# $root top modules: nand_gate.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: nand_gate.
+# $root top modules: nand_gate.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: nand_gate tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# Error: You do not have valid license to run C Code Debug.
+# Error: Contact Aldec for ordering information sales@aldec.com
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: nand_gate tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2020 nand_gate.v : (13, 10): begin...end pair(s) mismatch detected. 1 <end> tokens are missing.
+# Error: VCP2000 nand_gate.v : (13, 10): Syntax error. Unexpected token: endmodule[_ENDMODULE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5103 nand_gate.v : (12, 17): Undeclared identifier: y.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Assertions Compiler.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+tb_nand tb_nand
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.2 [s]
+# SLP: Finished : 1.3 [s]
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 6 (85.71%) signals in SLP and 1 (14.29%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5269 kB (elbread=1023 elab2=4100 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\prosjekt\prosjekt\src\wave.asdb
+#  09.22, onsdag 19. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: tb_nand (tb_nand)
+run
+# KERNEL: Error: Immediate assert condition (out==1'b1) FAILED at time: 0ps, M:/AIMSpice/TFE4152_project_2022/HDL/prosjekt/prosjekt/src/nand_gate.v(12), scope: tb_nand
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Assertions Compiler.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.2 [s]
+# SLP: Finished : 1.3 [s]
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 6 (85.71%) signals in SLP and 1 (14.29%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5269 kB (elbread=1023 elab2=4100 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\prosjekt\prosjekt\src\wave.asdb
+#  09.23, onsdag 19. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: tb_nand (tb_nand)
+run
+# KERNEL: Error: Immediate assert condition (out==1'b1) FAILED at time: 0ps, M:/AIMSpice/TFE4152_project_2022/HDL/prosjekt/prosjekt/src/nand_gate.v(13), scope: tb_nand
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 nand_gate.v : (7, 10): Syntax error. Unexpected token: timescale[_IDENTIFIER]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 nand_gate.v : (7, 10): Syntax error. Unexpected token: timescale[_IDENTIFIER]. Expected tokens: ';' , 'checker' , 'function' , 'task' , 'timeprecision' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+run @50ns
+# KERNEL: stopped at time: 50 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'M:/AIMSpice/TFE4152_project_2022/HDL/prosjekt/prosjekt/src/wave.asdb'.
+run @50ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.1 [s]
+# SLP: Finished : 1.2 [s]
+# SLP: 1 (50.00%) primitives and 1 (50.00%) other processes in SLP
+# SLP: 6 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1174 kB (elbread=1023 elab2=5 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\prosjekt\prosjekt\src\wave.asdb
+#  09.35, onsdag 19. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: tb_nand (tb_nand)
+# Waveform file 'untitled.awc' connected to 'M:/AIMSpice/TFE4152_project_2022/HDL/prosjekt/prosjekt/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+tb_nand tb_nand
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.1 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 1 (50.00%) primitives and 1 (50.00%) other processes in SLP
+# SLP: 6 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1174 kB (elbread=1023 elab2=5 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\prosjekt\prosjekt\src\wave.asdb
+#  09.36, onsdag 19. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: tb_nand (tb_nand)
+# Waveform file 'untitled.awc' connected to 'M:/AIMSpice/TFE4152_project_2022/HDL/prosjekt/prosjekt/src/wave.asdb'.
+# 3 signal(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2858 nand_gate.v : (15, 19): ina is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 nand_gate.v : (17, 19): inb is not a valid left-hand side of a procedural assignment.
+# Error: VCP2858 nand_gate.v : (19, 19): ina is not a valid left-hand side of a procedural assignment.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+tb_nand tb_nand
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.9 [s]
+# SLP: Finished : 1.0 [s]
+# SLP: 1 (50.00%) primitives and 1 (50.00%) other processes in SLP
+# SLP: 6 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1174 kB (elbread=1023 elab2=5 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\prosjekt\prosjekt\src\wave.asdb
+#  09.38, onsdag 19. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: tb_nand (tb_nand)
+# Waveform file 'untitled.awc' connected to 'M:/AIMSpice/TFE4152_project_2022/HDL/prosjekt/prosjekt/src/wave.asdb'.
+# 3 signal(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve   -work prosjekt $dsn/src/nand_gate.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_nand.
+# $root top modules: nand_gate tb_nand.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.0 [s]
+# SLP: 1 (50.00%) primitives and 1 (50.00%) other processes in SLP
+# SLP: 6 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1174 kB (elbread=1023 elab2=5 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location M:\AIMSpice\TFE4152_project_2022\HDL\prosjekt\prosjekt\src\wave.asdb
+#  09.39, onsdag 19. oktober 2022
+#  Simulation has been initialized
+#  Selected Top-Level: tb_nand (tb_nand)
+# Waveform file 'untitled.awc' connected to 'M:/AIMSpice/TFE4152_project_2022/HDL/prosjekt/prosjekt/src/wave.asdb'.
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run
+# KERNEL: Simulation has finished. There are no more test vect

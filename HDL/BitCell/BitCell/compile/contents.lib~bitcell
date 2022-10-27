@@ -1,0 +1,19 @@
+95
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 1 "./../src/sr_latch.sv" 3 SrLatch
+~A 1 "./../src/sr_latch.sv" 3 SrLatch
+~M 1 "./../src/bitcell.sv" 10 bitcell
+~A 1 "./../src/bitcell.sv" 10 bitcell
+~M 3 "./../src/bitcell.sv" 20 simple_bitcell
+~A 1 "./../src/bitcell.sv" 20 simple_bitcell
+~M 3 "./../src/sr_latch.sv" 1 sr_latch
+~A 1 "./../src/sr_latch.sv" 1 sr_latch
+~M 3 "./../src/sr_latch.sv" 8 sr_latch_tb
+~A 1 "./../src/sr_latch.sv" 8 sr_latch_tb
+~M 3 "./../src/sr_latch.sv" 9 st_latch_tb
+~A 1 "./../src/sr_latch.sv" 9 st_latch_tb
+~M 3 "./../src/bitcell.sv" 28 tb_bitcell
+~A 1 "./../src/bitcell.sv" 28 tb_bitcell
+~M 3 "./../src/test.sv" 1 test
+~A 1 "./../src/test.sv" 1 test

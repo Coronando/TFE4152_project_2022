@@ -1,0 +1,10 @@
+*AND Gate by Sindre Nordtveit and Mathias Bj�nnes
+
+*NB: For this file to work, it has to be included AFTER the NOT and NAND
+
+.subckt and_gate input_a input_b output v_main gnd
+
+Xnand_in_subcircuit input_a input_b nand_out v_main gnd nand_gate
+Xnot_in_subcircuit nand_out output v_main gnd not_gate
+
+.ends and_gate

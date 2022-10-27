@@ -1,0 +1,14 @@
+*NAND Gate by Sindre Nordtveit and Mathias Bj�nnes
+
+.subckt nand_gate input_a input_b output v_main gnd
+
+*Upper part of circuit defined
+XM_Apmos v_main input_a output v_main pmos1v L=L_pmos W=W_pmos
+XM_Bpmos v_main input_b output v_main pmos1v L=L_pmos W=W_pmos
+
+*Lower part of circuit defined
+XM_Anmos nmos_connect input_a gnd gnd nmos1v L=L_nmos W=W_nmos
+XM_Bnmos output input_b nmos_connect gnd nmos1v L=L_nmos W=W_nmos
+
+*End of subcircuit
+.ends nand
