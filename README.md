@@ -1,5 +1,5 @@
 # TFE4152_project_2022
-A psudoscientific gathering of bullshit.
+An honest attemt at passing with a decent grade in TFE4152. Don't forget the guide I made, it should help you get running.
 
 - [TFE4152_project_2022](#tfe4152_project_2022)
   - [File structure:](#file-structure)
