@@ -1,0 +1,14 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Memory=1
+Built-in symbols=0
+
+[COMPILESTATUS|.\src\Memory.sv]
+FileTimeLow=30995481
+Status=Modified
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\Memory\Memory.adf|]
+Path=
+

@@ -1,0 +1,74 @@
+[aimspice]
+[description]
+1502
+Bitcell2 Current Test by Sindre Nordtveit and Mathias Bj�nnes.
+
+*Include the gpdk90nm_tt to your project
+.include Resources\gpdk90nm\gpdk90nm_tt.cir
+
+*Set parameters
+.param WL = 2
+*NMOS params
+.param L_nmos = 300n
+.param W_nmos = 300n
+*PMOS params
+.param L_pmos = 300n
+.param W_pmos = 600n
+
+
+*Include subcircuits
+.include Subcircuits\not_gate.cir
+.include Subcircuits\nand_gate.cir
+.include Subcircuits\and_gate.cir
+.include Subcircuits\nand3_gate.cir
+.include Subcircuits\and3_gate.cir
+.include Subcircuits\and_pg_gate.cir
+
+.param voltage = 0.6V
+*.param voltage = 1V
+
+Vdd V_main 0 DC voltage
+
+*Name		input 	input		output		V_in	gnd	type of gate
+
+Xnot_read	read 		write 				V_main 0 	not_gate 
+Xenable 	sel 		write 	enable 		V_main 0 	and_gate
+Xset 		enable 	    input 	set 		V_main 0 	nand_gate
+Xreset 	    enable 	    set     reset		V_main 0 	nand_gate
+
+Xtop_latch 	set 		q_not 	q 			V_main 0 	nand_gate
+Xbot_latch 	reset	 	q 		q_not 		V_main 0 	nand_gate
+
+Xout 		read q sel output V_main 0    and3_gate 		
+
+*Vinput input 0 DC voltage 
+*.connect input 0
+*Vread read 0 DC voltage
+*.connect read 0
+*Vsel sel 0 DC voltage
+*.connect sel 0
+
+Vinput input 0 	pulse	(0 voltage 0ps 1ps 1ps 10ns 20ns)
+Vread read 0 	pulse	(0 voltage 0ps 1ps 1ps 5ns  10ns)
+Vselect sel 0	pulse	(0 voltage 0ps 1ps 1ps 20ns 40ns)
+
+.plot V(input) 
+.plot V(read)
+.plot V(sel)
+.plot V(output) 
+.plot V(q)
+.plot I(Vdd)
+
+*.plot V(q_not)
+*.plot V(q)
+
+*.plot V(input_a) V(inp
+[tran]
+0.01ps
+160ns
+X
+X
+0
+[ana]
+4 0
+[end]

@@ -1,6 +1,6 @@
 [aimspice]
 [description]
-1352
+1410
 Bitcell by Sindre Nordtveit and Mathias Bj�nnes.
 
 *Include the gpdk90nm_tt to your project
@@ -20,21 +20,24 @@ Bitcell by Sindre Nordtveit and Mathias Bj�nnes.
 .include Subcircuits\not_gate.cir
 .include Subcircuits\nand_gate.cir
 .include Subcircuits\and_gate.cir
+.include Subcircuits\nand3_gate.cir
+.include Subcircuits\and_pg_gate.cir
 
-Vdd V_main 0 DC 0.4V
+.param voltage = 0.8V
 
-*Name		input 	intput	output		V_in	gnd	type of gate
+Vdd V_main 0 DC voltage
+
+*Name		input 	input		output		V_in	gnd	type of gate
 
 Xnot_read	read 		write 				V_main 0 	not_gate 
 Xenable 	sel 		write 	enable 		V_main 0 	and_gate
-Xset 		enable 	input 	set 			V_main 0 	nand_gate
-Xreset 	enable 	set 		reset			V_main 0 	nand_gate
+Xset 		enable 	    input 	set 		V_main 0 	nand_gate
+Xreset 	    enable 	    set     reset		V_main 0 	nand_gate
 
 Xtop_latch 	set 		q_not 	q 			V_main 0 	nand_gate
 Xbot_latch 	reset	 	q 		q_not 		V_main 0 	nand_gate
 
-Xq_and_sel 	sel 		q 		sel_and_q 		V_main 0 	and_gate
-Xout 		read 		sel_and_q 	output 		V_main 0 	and_gate
+Xout 		read q sel output V_main 0    and_pg_gate 
 
 Vinput input 0 pulse(0 1 1ps 0.1ps 0.1ps 10ns 20ns)
 Vread read 0 pulse(0 1 1ps 0.1ps 0.1ps 5ns 10ns)
@@ -53,16 +56,4 @@ Vselect sel 0 pulse(0 1 1ps 0.1ps 0.1ps 20ns 40ns)
 *.plot V(q)
 
 *.plot V(input_a) V(input_b) V(output)
-[options]
-2
-Tnom 70
-Temp 70
-[tran]
-0.001ps
-80ns
-X
-X
-0
-[ana]
-4 0
 [end]

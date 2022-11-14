@@ -1,0 +1,61 @@
+timestamp=1668351546914
+
+[~A]
+LastVerilogToplevel=Memory_tb
+ModifyID=4
+Version=73
+m:/IC/TFE4152_project_2022/HDL/Memory/Memory/src/Memory.sv=0*10088*11371
+
+[$root]
+A/$root=22|||1*30563
+BinI32/$root=3*10029
+SLP=3*10133
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|c73a565f2ade592f8ac1c68f484c9216d0ebabf4a2f84d0731dd2f46f7e6f1f3
+
+[Bitcell]
+A/Bitcell=22|./../src/Memory.sv|10|1*31987
+BinI32/Bitcell=3*10412
+R=./../src/Memory.sv|10
+SLP=3*10518
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|6bc921a42ed301c6ca839a8d2a751f6226527262ddaa47cb266f3a3c4d9b973ab279b4fc1d108873d69104238a93679d
+
+[Decoder]
+A/Decoder=22|./../src/Memory.sv|21|1*33975
+BinI32/Decoder=3*10622
+R=./../src/Memory.sv|21
+SLP=3*10728
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|1c17319664848e6a353a8c8fab86b23826527262ddaa47cb266f3a3c4d9b973a60022e0916b51d7b687f8f68648bd35a
+
+[MemoryModule]
+A/MemoryModule=22|./../src/Memory.sv|37|1*36426
+BinI32/MemoryModule=3*11016
+R=./../src/Memory.sv|37
+SLP=3*12008
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|e5f02fa174e4c1195fa4559372b5513de4465cbc5ef218114bdb069045f6b9a7dd530038bb069f74a4ee3501d932e08f
+
+[Memory_tb]
+A/Memory_tb=22|./../src/Memory.sv|61|1*39643
+BinI32/Memory_tb=3*12547
+R=./../src/Memory.sv|61
+SLP=3*13194
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|456e480640255f9b15aabcad41cf8b7bfe08ec5dd4a9166b7b73853feca17806208aa7189051a945d1a6f876ea16f174
+
+[SrLatch]
+A/SrLatch=22|./../src/Memory.sv|4|1*30937
+BinI32/SrLatch=3*10201
+R=./../src/Memory.sv|4
+SLP=3*10307
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|280a7c12649faaf54f367e8792c3c3be26527262ddaa47cb266f3a3c4d9b973a912139ce12f006173c565d3647fec801
+
+[~MFT]
+0=10|0Memory.mgf|11371|5242
+1=12|1Memory.mgf|39643|30563
+3=24|3Memory.mgf|13194|10029
+
+[~U]
+$root=12|0*8866|
+Bitcell=12|0*9247|
+Decoder=12|0*9461|
+MemoryModule=12|0*9652|
+Memory_tb=12|0*9910||0x10
+SrLatch=12|0*9048|

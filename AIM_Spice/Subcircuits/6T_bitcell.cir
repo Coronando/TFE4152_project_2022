@@ -1,0 +1,4 @@
+
+.subckt 6t_cell wl bl 
+* Subcircuit Body
+.ends 6t_cell

@@ -1,0 +1,10 @@
+*3 input AND Gate by Sindre Nordtveit and Mathias Bj�nnes
+
+*NB: For this file to work, it has to be included AFTER the NOT and NAND
+
+.subckt and3_gate input_a input_b input_c output v_main gnd
+
+Xnand3_in_subcircuit input_a input_b input_c nand_out v_main gnd nand3_gate
+Xnot_in_subcircuit nand_out output v_main gnd not_gate
+
+.ends and3_gate
