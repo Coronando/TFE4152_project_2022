@@ -7,15 +7,15 @@
 Xpg_pmos    v_main      sel         top         v_main  pmos1v L=L_pmos W=W_pmos
 
 *Upper part of NAND circuit
-XM_Apmos    top         input_a     and_out     v_main  pmos1v L=L_pmos W=W_pmos
-XM_Bpmos    top         input_b     and_out     v_main  pmos1v L=L_pmos W=W_pmos
+XM_Apmos    top         input_a     and_out     top     pmos1v L=L_pmos W=W_pmos
+XM_Bpmos    top         input_b     and_out     top     pmos1v L=L_pmos W=W_pmos
 *Lower part of NAND defined
-XM_Anmos    and_out     input_a     a_source    gnd     nmos1v L=L_nmos W=W_nmos
-XM_Bnmos    a_source    input_b     bottom      gnd     nmos1v L=L_nmos W=W_nmos
+XM_Anmos    and_out     input_a     a_source    bottom     nmos1v L=L_nmos W=W_nmos
+XM_Bnmos    a_source    input_b     bottom      bottom     nmos1v L=L_nmos W=W_nmos
 
 *Inverter
-Xinv_pmos   top         and_out     output      v_main  pmos1v L=L_pmos W=W_pmos
-Xinv_nmos   output      and_out     bottom      gnd     nmos1v L=L_nmos W=W_nmos
+Xinv_pmos   top         and_out     output      top        pmos1v L=L_pmos W=W_pmos
+Xinv_nmos   output      and_out     bottom      bottom     nmos1v L=L_nmos W=W_nmos
 
 Xpg_nmos    bottom      sel         gnd         gnd     nmos1v L=L_nmos W=W_nmos
 

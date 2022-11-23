@@ -1,0 +1,12 @@
+[Version]
+Version=10.2
+[Designs]
+memory=.\Memory\Memory.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+memory=1

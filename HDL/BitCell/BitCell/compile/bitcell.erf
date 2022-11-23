@@ -17,5 +17,5 @@ UPDATEPROGRESS 100
 MESSAGE "Unit top modules: test."
 MESSAGE "$root top modules: sr_latch st_latch_tb sr_latch_tb tb_bitcell simple_bitcell test."
 ENDPROGRESS Compiling...
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 1[s]."
 MESSAGE "done"

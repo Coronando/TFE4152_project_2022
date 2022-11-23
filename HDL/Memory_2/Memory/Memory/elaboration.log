@@ -1,0 +1,28 @@
+Active-HDL 10.2.3312.5682  2022-11-21 17.34.47
+
+Elaboration top modules:
+Verilog Module                CombinedSystem_tb_2
+
+
+-------------------------------------------------------------------------------------------
+Verilog Module          | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------
+CombinedSystem_tb_2     | memory  |      | 10.2.3312.5682  (Windows) | -O2
+CombinedSystem          | memory  |      | 10.2.3312.5682  (Windows) | -O2
+FSM                     | memory  |      | 10.2.3312.5682  (Windows) | -O2
+Decoder                 | memory  |      | 10.2.3312.5682  (Windows) | -O2
+MemoryModule            | memory  |      | 10.2.3312.5682  (Windows) | -O2
+FlipFlop                | memory  |      | 10.2.3312.5682  (Windows) | -O2
+Bitcell                 | memory  |      | 10.2.3312.5682  (Windows) | -O2
+SrLatch                 | memory  |      | 10.2.3312.5682  (Windows) | -O2
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Library                 | Comment
+-------------------------------------------------------------------------------------------
+memory                  | None
+-------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 -L memory -PL memory +accb +accr +access +r CombinedSystem_tb_2
+

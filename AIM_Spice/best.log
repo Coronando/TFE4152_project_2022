@@ -1,0 +1,485 @@
+
+                 *********************************************
+                 *                                           *
+                 *             A I M - S p i c e             *
+                 *                                           *
+                 *         Professional Version 2022.100           *
+                 *                                           *
+                 *********************************************
+
+	Date: Wed Nov 23 11:49:42 2022
+	Circuit File: M:\IC\TFE4152_project_2022\AIM_Spice\best.cir
+	Analysis: Transient
+
+**************************  Circuit Description  **************************
+
+     1:  Combined version of the different improvements. Made by Sindre Nordtveit and Mathias Bjoonnes
+     2:  
+     3:  *Include the gpdk90nm_tt to your project
+     4:  *.include Resources\gpdk90nm\gpdk90nm_ff.cir
+     5:  *.include Resources\gpdk90nm\gpdk90nm_ss.cir
+     6:  *.include Resources\gpdk90nm\gpdk90nm_sf.cir
+     7:  *.include Resources\gpdk90nm\gpdk90nm_fs.cir
+     8:  *include Resources\gpdk90nm\gpdk90nm_tt.cir
+     9:  .param  s1v_rs_ne=0.000000e+000 s1v_vsat_ne=1.120000e+005 s1v_pldd_surf=6.000000e+019   s1v_uc1_ne=3.700000e-010 s1v_u0_ne=2.000000e-002 s1v_nch_ne=5.200000e+017   s1v_rsc_ne=4.082483e-014 s1v_cgbo_ne=1.482000e-011 s1v_prt_ne=1.000000e+001   s1v_rdc_ne=4.082483e-014 s1v_vth0_ne=1.692662e-001 s1v_k2_ne=0.000000e+000   s1v_cgdo_ne=2.667600e-010 s1v_ckappa_ne=4.605336e+000 s1v_wint_ne=6.000000e-009   s1v_k1_ne=2.825346e-001 s1v_cgsl_ne=1.111500e-010 s1v_nldd_surf=3.000000e+019   s1v_js_ne=3.366667e-006 s1v_hdif_ne=1.400000e-007 s1v_rdsw_ne=3.900000e-006   s1v_jsw_ne=3.366667e-010 s1v_tox_ne=2.330000e-009 s1v_cj_ne=7.983537e-004   s1v_cjsw_ne=4.790122e-011 s1v_ldif_ne=1.000000e-008 s1v_xj_ne=2.500000e-008   s1v_rd_ne=0.000000e+000 s1v_pb_ne=9.918524e-001 s1v_cf_ne=4.594612e-011   s1v_lint_ne=1.500000e-008 s1v_cjswg_ne=1.995884e-011 s1v_rsh_ne=1.000000e+001   s1v_u0_pe=1.200000e-002 s1v_nch_pe=4.000000e+017 s1v_rsc_pe=2.886751e-014   s1v_cgbo_pe=1.392363e-011 s1v_rdc_pe=2.886751e-014 s1v_vth0_pe={-1.359511e-001}   s1v_k2_pe=0.000000e+000 s1v_cgdo_pe=2.506253e-010 s1v_ckappa_pe=1.043477e+001   s1v_wint_pe=5.000000e-009 s1v_k1_pe=2.637520e-001 s1v_cgsl_pe=1.044272e-010   s1v_js_pe=3.350000e-006 s1v_hdif_pe=1.400000e-007 s1v_rdsw_pe=7.800000e-006   s1v_jsw_pe=3.350000e-010 s1v_tox_pe=2.480000e-009 s1v_cj_pe=7.912252e-004   s1v_cjsw_pe=4.747351e-011 s1v_ldif_pe=1.000000e-008 s1v_xj_pe=2.500000e-008   s1v_rd_pe=0.000000e+000 s1v_pb_pe=1.009805e+000 s1v_cf_pe=4.527118e-011   s1v_lint_pe=1.500000e-008 s1v_cjswg_pe=1.978063e-011 s1v_rsh_pe=2.000000e+001   s1v_rs_pe=0.000000e+000 s1v_vsat_pe=1.000000e+005   gleak_scale=1.0   s1v_nat_vth0_ne=0.192662e-001 s1v_nat_k1_ne=2.825346e-002   pvt_mc=0 pu0_mc=0 pltw_mc=0
+    10:  
+    11:  .subckt nmos1v d g s b param: l=0.1u w=10u simm=1 nrd={s1v_hdif_ne/w} nrs={s1v_hdif_ne/w} as=1p ad=1p ps=1u pd=1u 
+    12:  + garea={w*l} maforward={2.5e3*garea*gleak_scale} mareverse={.03*maforward} 
+    13:  + varvt=0.004
+    14:  + geo_fac={0.7071/sqrt(l*w*simm*1e12)}
+    15:  + mm_delvt={varvt*geo_fac*pvt_mc}
+    16:  + mm_mu0={1-(0.005*geo_fac*pu0_mc)} 
+    17:  + mm_dl={2e-03*geo_fac*l*pltw_mc} 
+    18:  + mm_dw={-24e-03*geo_fac*w*pltw_mc}
+    19:  + mm_dtox={2e-03*geo_fac*s1v_tox_ne*pltw_mc}
+    20:  m1 d g s b gpdk090_nmos1v_x w=w l=l as=as ad=ad ps=ps pd=pd nrd=nrd nrs=nrs 
+    21:  .model gpdk090_nmos1v_x nmos
+    22:  + level=18
+    23:  + lmin=0.0 lmax=1.0 wmin=0.0 
+    24:  + wmax=1.0 tnom=25.0 version=3.2 
+    25:  + tox={s1v_tox_ne+mm_dtox} toxm={s1v_tox_ne+mm_dtox} xj=s1v_xj_ne 
+    26:  + nch=s1v_nch_ne lln=1.0000000 lwn=1.0000000 
+    27:  + wln=1.0000000 wwn=-1.0000000 lint=s1v_lint_ne 
+    28:  + ll=0.00 lw=0.00 lwl=0.00 
+    29:  + wint=s1v_wint_ne wl=0.00 ww=0.00 
+    30:  + wwl=0.00 mobmod=1 binunit=2 
+    31:  + dwg=0.00 
+    32:  + dwb=0.00  
+    33:  + rsh=s1v_rsh_ne 
+    34:  + vth0={s1v_vth0_ne+mm_delvt} k1=s1v_k1_ne k2=s1v_k2_ne 
+    35:  + k3=-2.3000000 dvt0=3.86366 dvt1=1.2 
+    36:  + dvt2=5.0299990e-02 dvt0w=0.00 dvt1w=0.00 
+    37:  + dvt2w=0.00 nlx=1.2517999e-07 w0={-7.1353000e-09} 
+    38:  + k3b=0.5576769 ngate=4.0e20 vsat=s1v_vsat_ne 
+    39:  + ua={-6.1879500e-10} ub=1.8806652e-18 uc=1.3823546e-10 
+    40:  + rdsw=s1v_rdsw_ne prwb=0.00 prwg=0.00 
+    41:  + wr=1.0000000 u0={s1v_u0_ne*mm_mu0} a0=2.3750000 
+    42:  + keta={-3.1429991e-02} a1=0.00 a2=0.9900000 
+    43:  + ags=0.8900000 b0=0.00 b1=0.00 
+    44:  + voff={-9.6776000e-02} nfactor=1.0200000 cit={-8.6656060e-04} 
+    45:  + cdsc=4.4460000e-02 cdscb=1.0565110e-02 cdscd=0.00 
+    46:  + eta0=7.6580000e-02 etab={-3.4998000e-02} dsub=0.2200000 
+    47:  + pclm=1.5488822 pdiblc1=0.00 pdiblc2=2.4648249e-02 
+    48:  + pdiblcb=0.00 drout=0.00 pscbe1=9.2648200e08 
+    49:  + pscbe2=1.0000000e-20 pvag=0.00 delta=7.5000000e-03 
+    50:  + alpha0=0.00 alpha1=0.0177 beta0=6.3203 
+    51:  + kt1=-0.13 kt2=-0.042 at=9.0000000e04 
+    52:  + ute=-1.7303560 ua1=1.8035814e-09 ub1={-2.1874742e-18} 
+    53:  + uc1=s1v_uc1_ne kt1l=0.00 prt=s1v_prt_ne 
+    54:  + cj=s1v_cj_ne mj=0.222 pb=s1v_pb_ne 
+    55:  + cjsw=s1v_cjsw_ne mjsw=0.01 pbsw=0.1 
+    56:  + cjswg=s1v_cjswg_ne mjswg=0.5028 pbswg=0.6859 
+    57:  + tpb=1.30e-03 tpbsw=0.0000 tpbswg=2.81e-03 
+    58:  + tcj=7.61e-04 tcjsw=1.04e-03 tcjswg=1.63e-03 
+    59:  + js=s1v_js_ne jsw=s1v_jsw_ne 
+    60:  + xti=3 cgdo=s1v_cgdo_ne cgso=s1v_cgdo_ne 
+    61:  + cgbo=s1v_cgbo_ne capmod=2  
+    62:  + elm=5 xpart=1 cgsl=s1v_cgsl_ne 
+    63:  + cgdl=s1v_cgsl_ne ckappa=s1v_ckappa_ne cf=s1v_cf_ne 
+    64:  + clc=1.0000000e-07 cle=0.6000000 dlc=1.89e-08 
+    65:  + dwc=1.62e-08 llc=1.53e-16 lwc={-9.0e-16} 
+    66:  + wlc=0 wwc=-0.0989 lwlc=0 
+    67:  + wwlc=0 acde=0.5 moin=10.5 
+    68:  + noff=1.85 voffcv=-0.048 lvoffcv=2.0e-09 
+    69:  + ijth=1 
+    70:  + noia=1.0e+19 noib=2e+4 noic=1.0e-13 
+    71:  + ef=1.0 noimod=2 em=4e+7 
+    72:  .ends gpdk090_nmos1v
+    73:  
+    74:  .subckt pmos1v d g s b param: l=0.1u w=10u simm=1 nrd={s1v_hdif_pe/w} nrs={s1v_hdif_pe/w} as=1p ad=1p ps=1u pd=1u 
+    75:  + garea={w*l} maforward={1.6e3*garea*gleak_scale} mareverse={.03*maforward} 
+    76:  + varvt=0.003
+    77:  + geo_fac={0.7071/sqrt(l*w*simm*1e12)} 
+    78:  + mm_delvt={varvt*geo_fac*pvt_mc}
+    79:  + mm_mu0={1-(0.005*geo_fac*pu0_mc)}
+    80:  + mm_dl={2e-03*geo_fac*l*pltw_mc}
+    81:  + mm_dw={-24e-03*geo_fac*w*pltw_mc}
+    82:  + mm_dtox={2e-03*geo_fac*s1v_tox_pe*pltw_mc}
+    83:  m1 d g s b gpdk090_pmos1v_x w=w l=l as=as ad=ad ps=ps pd=pd nrd=nrd nrs=nrs 
+    84:  .model gpdk090_pmos1v_x pmos 
+    85:  + level=18
+    86:  + lmin=0.0 lmax=1.0 wmin=0.0 
+    87:  + wmax=1.0 tnom=25.0 version=3.2 
+    88:  + tox={s1v_tox_pe+mm_dtox} toxm={s1v_tox_pe+mm_dtox} xj=s1v_xj_pe 
+    89:  + nch=1.7200001e17 lln=1.0000000 lwn=1.0000000 
+    90:  + wln=1.0000000 wwn=-1.0000000 lint=s1v_lint_pe 
+    91:  + ll=0.00 lw=0.00 lwl=0.00 
+    92:  + wint=s1v_wint_pe wl=0.00 ww=0.00 
+    93:  + wwl=0.00 mobmod=1 binunit=2 
+    94:  + dwg=0.00 
+    95:  + dwb=0.00
+    96:  + rsh=s1v_rsh_pe
+    97:  + vth0={s1v_vth0_pe+mm_delvt} pvth0=0 k1=s1v_k1_pe 
+    98:  + k2=s1v_k2_pe k3=-0.5000000 dvt0=8.0 
+    99:  + dvt1=2.07 dvt2=0.1000000 dvt0w=0.00 
+   100:  + dvt1w=0.00 dvt2w=0.00 nlx=2.2400000e-07 
+   101:  + w0=0.00 k3b=7.0000000e-02 ngate=9.3200000e19 
+   102:  + vsat=s1v_vsat_pe ua={-2.7643932e-10} ub=2.2546092e-18 
+   103:  + uc=1.6265005e-10 rdsw=s1v_rdsw_pe prwb=0.00 
+   104:  + prwg=0.00 wr=1.0000000 u0={s1v_u0_pe*mm_mu0} 
+   105:  + a0=2.9669099 keta={-8.2015020e-02} a1=0.00 
+   106:  + a2=1.0000000 ags=1.2279299 b0=0.00 
+   107:  + b1=0.00 voff=-0.1170768 nfactor=1.0000000 
+   108:  + cit={-2.5695576e-03} cdsc=0.00 cdscb=0.00 
+   109:  + cdscd=0.00 eta0=5.0000000e-02 leta0=0 
+   110:  + etab=0 dsub=0.3000000 pclm=1.0000000 
+   111:  + pdiblc1=6.0000000e-03 pdiblc2=5.0000000e-03 pdiblcb=-0.5267781 
+   112:  + drout=0.00 pscbe1=5.1300000e08 pscbe2=4.8900000e-07 
+   113:  + pvag=0.00 delta=9.9999990e-03 alpha0=0.00 
+   114:  + alpha1=0.001 beta0=7.6 kt1=-0.11 
+   115:  + kt2=4.4329650e-02 at=1.0000000e04 ute=-1.4468272 
+   116:  + ua1=1.2158887e-09 ub1={-4.0489830e-18} uc1={-5.6549980e-10} 
+   117:  + kt1l=0.00 prt=0 cj=s1v_cj_pe 
+   118:  + mj=0.331 pb=s1v_pb_pe cjsw=s1v_cjsw_pe 
+   119:  + mjsw=0.01 pbsw=0.10 cjswg=s1v_cjswg_pe 
+   120:  + mjswg=0.7833 pbswg=0.8137 tpb=0.00173 
+   121:  + tpbsw=0.0 tpbswg=0.0044 tcj=0.000949 
+   122:  + tcjsw=0.0000758 tcjswg=0.00388 js=s1v_js_pe 
+   123:  + jsw=s1v_jsw_pe xti=3 
+   124:  + cgdo=s1v_cgdo_pe cgso=s1v_cgdo_pe cgbo=s1v_cgbo_pe 
+   125:  + capmod=2 elm=5 
+   126:  + xpart=1 cgsl=s1v_cgsl_pe cgdl=s1v_cgsl_pe 
+   127:  + ckappa=s1v_ckappa_pe cf=s1v_cf_pe clc=1.0000000e-07 
+   128:  + cle=0.6000000 dlc=2.252e-08 dwc=1.2404e-08 
+   129:  + llc={-1.2e-16} lwc={-6.2e-16} wlc=0 
+   130:  + wwc=-0.15 lwlc=0 wwlc=0 
+   131:  + acde=0.5 moin=15.6 noff=2.16 
+   132:  + voffcv=-0.0385 lvoffcv={-3.80e-09} lnoff=7.50e-08 
+   133:  + ijth=1 
+   134:  + noia=1.0e+19 noib=2.0e+3 noic=1.0e-11 
+   135:  + ef=1.1 noimod=2 em=1.0e+8 
+   136:  .ends
+   137:  *end of: Resources\gpdk90nm\gpdk90nm_tt.cir
+   138:  
+   139:  *NMOS params
+   140:  .param L_nmos = 150n
+   141:  .param W_nmos = 150n
+   142:  *PMOS params
+   143:  .param L_pmos = 150n
+   144:  .param W_pmos = 250n
+   145:  
+   146:  
+   147:  *Include subcircuits
+   148:  *include Subcircuits\not_gate.cir
+   149:  *NOT Gate by Sindre Nordtveit and Mathias Bj�nnes
+   150:  
+   151:  .subckt not_gate input output v_main gnd
+   152:  
+   153:  XM_upper v_main input output v_main pmos1v L=L_pmos W=W_pmos
+   154:  XM_lower output input gnd gnd nmos1v L=L_nmos W=W_nmos
+   155:  
+   156:  .ends not_gate
+   157:  *end of: Subcircuits\not_gate.cir
+   158:  *.include Subcircuits\improved_not_gate.cir
+   159:  *include Subcircuits\nand_gate.cir
+   160:  *NAND Gate by Sindre Nordtveit and Mathias Bj�nnes
+   161:  
+   162:  .subckt nand_gate input_a input_b output v_main gnd
+   163:  
+   164:  *Upper part of circuit defined
+   165:  XM_Apmos v_main input_a output v_main pmos1v L=L_pmos W=W_pmos
+   166:  XM_Bpmos v_main input_b output v_main pmos1v L=L_pmos W=W_pmos
+   167:  
+   168:  *Lower part of circuit defined
+   169:  XM_Anmos nmos_connect input_a gnd gnd nmos1v L=L_nmos W=W_nmos
+   170:  XM_Bnmos output input_b nmos_connect gnd nmos1v L=L_nmos W=W_nmos
+   171:  
+   172:  *End of subcircuit
+   173:  .ends nand
+   174:  *end of: Subcircuits\nand_gate.cir
+   175:  *include Subcircuits\and_gate.cir
+   176:  *AND Gate by Sindre Nordtveit and Mathias Bj�nnes
+   177:  
+   178:  *NB: For this file to work, it has to be included AFTER the NOT and NAND
+   179:  
+   180:  .subckt and_gate input_a input_b output v_main gnd
+   181:  
+   182:  Xnand_in_subcircuit input_a input_b nand_out v_main gnd nand_gate
+   183:  Xnot_in_subcircuit nand_out output v_main gnd not_gate
+   184:  
+   185:  .ends and_gate
+   186:  *end of: Subcircuits\and_gate.cir
+   187:  *include Subcircuits\nand3_gate.cir
+   188:  *NAND Gate by Sindre Nordtveit and Mathias Bj�nnes
+   189:  
+   190:  .subckt nand3_gate input_a input_b input_c output v_main gnd
+   191:  
+   192:  *Upper part of circuit defined
+   193:  XM_Apmos v_main input_a output v_main pmos1v L=L_pmos W=W_pmos
+   194:  XM_Bpmos v_main input_b output v_main pmos1v L=L_pmos W=W_pmos
+   195:  XM_Cpmos v_main input_c output v_main pmos1v L=L_pmos W=W_pmos
+   196:  
+   197:  *Lower part of circuit defined
+   198:  XM_Anmos output input_a a_source gnd nmos1v L=L_nmos W=W_nmos
+   199:  XM_Bnmos a_source input_b b_source gnd nmos1v L=L_nmos W=W_nmos
+   200:  XM_Cnmos b_source input_c gnd gnd nmos1v L=L_nmos W=W_nmos
+   201:  
+   202:  *End of subcircuit
+   203:  .ends nand
+   204:  *end of: Subcircuits\nand3_gate.cir
+   205:  *include Subcircuits\and3_gate.cir
+   206:  *3 input AND Gate by Sindre Nordtveit and Mathias Bj�nnes
+   207:  
+   208:  *NB: For this file to work, it has to be included AFTER the NOT and NAND
+   209:  
+   210:  .subckt and3_gate input_a input_b input_c output v_main gnd
+   211:  
+   212:  Xnand3_in_subcircuit input_a input_b input_c nand_out v_main gnd nand3_gate
+   213:  Xnot_in_subcircuit nand_out output v_main gnd not_gate
+   214:  
+   215:  .ends and3_gate
+   216:  *end of: Subcircuits\and3_gate.cir
+   217:  
+   218:  .param voltage = 0.12V
+   219:  
+   220:  Vdd V_main 0 DC voltage
+   221:  
+   222:  *Name		input 	input		output		V_in	gnd	type of gate
+   223:  
+   224:  Xnot_read	read 		write 				V_main 0 	not_gate 
+   225:  Xenable 	sel 		write 	enable 		V_main 0 	and_gate
+   226:  Xset 		enable 	input 	set 			V_main 0 	nand_gate
+   227:  Xreset 	enable 	set 		reset			V_main 0 	nand_gate
+   228:  
+   229:  Xtop_latch 	set 		q_not 	q 			V_main 0 	nand_gate
+   230:  Xbot_latch 	reset	 	q 		q_not 		V_main 0 	nand_gate
+   231:  
+   232:  *Xout 		read		sel		q	     output V_main 0    and3_gate
+   233:  Xqandsel 	q		sel 		q_and_sel		V_main 0 and_gate
+   234:  Xout 		read		q_and_sel 	output 		V_main 0 and_gate	
+   235:  
+   236:  Vinput input 0 	pulse	(0 voltage 0ps 5ps 5ps 10us 20us)
+   237:  Vread read 0 	pulse	(0 voltage 0ps 5ps 5ps 5us  10us)
+   238:  Vselect sel 0	pulse	(0 voltage 0ps 5ps 5ps 20us 40us)
+   239:  
+   240:  *Plot the different variables
+   241:  .plot V(read)	!1.2 0
+   242:  .plot V(input)	!1.2 0
+   243:  .plot V(sel)	!1.2 0
+   244:  .plot V(output) 	!1.2 0 
+   245:  .plot V(q)		!1.2 0 
+   246:  .plot I(Vdd) 	!1n -10n
+   247:  
+   248:  *Extract the values from inside the stable interval
+   249:  .extract tran label="111" 	file=Data\best0.txt		min(I(Vdd),41u,42u)
+   250:  .extract tran label="110"	file=Data\best0.txt	 	min(I(Vdd),46u,47u)
+   251:  .extract tran label="101"	file=Data\best0.txt		min(I(Vdd),51u,52u)
+   252:  .extract tran label="100" 	file=Data\best0.txt		min(I(Vdd),56u,57u)
+   253:  .extract tran label="011" 	file=Data\best0.txt		min(I(Vdd),61u,62u)
+   254:  .extract tran label="010" 	file=Data\best0.txt		min(I(Vdd),66u,67u)
+   255:  .extract tran label="001" 	file=Data\best0.txt		min(I(Vdd),71u,72u)
+   256:  .extract tran label="000"	file=Data\best0.txt		min(I(Vdd),76u,77u)
+   257:  .tran 10ps 80us
+
+***************************  Model Parameters  ****************************
+
+
+***************  Device Parameters (Only for .op analysis)  ***************
+
+
+
+**************************  Analysis Parameters  **************************
+
+	Stepsize ............ : 10ps
+	Final time .......... : 80us
+	Use Initial Conditions: Off
+
+
+
+**************  Options (Only those different from default)  **************
+
+	Temp:        0
+	Trtol:       0.01
+	Method:      Gear
+
+
+*************************  Simulation Statistics  *************************
+
+	Total number of iterations.....................: 3189
+	Number of iterations for transient analysis....: 3157
+	Total number of timepoints.....................: 1067
+	Number of timepoints accepted..................: 788
+	Number of timepoints rejected..................: 279
+	Total analysis time (sec)......................: 0.335
+	Transient analysis time (sec)..................: 0.332
+	Time spent in device loading (sec).............: 0.092
+	Time spent in L-U decomposition (sec)..........: 0.006
+	Time spent in matrix reordering (sec)..........: 0
+	Time spent in matrix solving (sec).............: 0.006
+	Time spent in transient L-U decomposition (sec): 0.005
+	Time spent in transient matrix solving (sec)...: 0.006
+
+**********************  Results of extract commands  **********************
+
+"111" : -8.4219e-10
+"110" : -2.12771e-09
+"101" : -9.60833e-10
+"100" : -2.00449e-09
+"011" : -1.27145e-09
+"010" : -8.32191e-10
+"001" : -6.23337e-10
+"000" : -7.81745e-10
+
+***************************  Kernel Messages  *****************************
+
+Circuit: Combined version of the different improvements. Made by Sindre Nordtveit and Mathias Bjoonnes
+
+Warning: premature EOF
+Warning: premature EOF
+Warning: premature EOF
+Warning: premature EOF
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:not_in_subcircuit:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:not_in_subcircuit:m_upper:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:not_in_subcircuit:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:not_in_subcircuit:m_upper:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:not_in_subcircuit:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:not_in_subcircuit:m_upper:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = not_read:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = not_read:m_upper:gpdk090_pmos1v_x
+Warning: vselect: no DC value, transient time 0 value used
+Warning: vread: no DC value, transient time 0 value used
+Warning: vinput: no DC value, transient time 0 value used
+Warning: Node v_main has less than two connections
+Warning: Node read has less than two connections
+Warning: Node sel has less than two connections
+Warning: Node input has less than two connections
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:not_in_subcircuit:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:not_in_subcircuit:m_upper:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = out:nand_in_subcircuit:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:not_in_subcircuit:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:not_in_subcircuit:m_upper:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = qandsel:nand_in_subcircuit:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = bot_latch:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = top_latch:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = reset:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = set:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:not_in_subcircuit:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:not_in_subcircuit:m_upper:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_bnmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_anmos:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_bpmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = enable:nand_in_subcircuit:m_apmos:gpdk090_pmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = not_read:m_lower:gpdk090_nmos1v_x
+BSIM3 v3.3.0 Parameter Checking.
+Model = not_read:m_upper:gpdk090_pmos1v_x
+Warning: vselect: no DC value, transient time 0 value used
+Warning: vread: no DC value, transient time 0 value used
+Warning: vinput: no DC value, transient time 0 value used
+

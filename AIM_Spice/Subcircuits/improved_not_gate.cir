@@ -1,0 +1,10 @@
+*NOT Gate by Sindre Nordtveit and Mathias Bj�nnes
+
+.subckt not_gate input output v_main gnd
+
+XM_upper2 v_main input top    v_main pmos1v L=L_pmos W=W_pmos
+XM_upper  top    input output v_main pmos1v L=L_pmos W=W_pmos
+XM_lower  output input bottom gnd    nmos1v L=L_nmos W=W_nmos
+XM_lower2 bottom input gnd    gnd    nmos1v L=L_nmos W=W_nmos
+
+.ends not_gate

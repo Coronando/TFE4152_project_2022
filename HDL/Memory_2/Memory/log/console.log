@@ -1,0 +1,67 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'CombinedSystem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'FSM' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Decoder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'MemoryModule' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'FlipFlop' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Bitcell' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'SrLatch' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# Waveform file 'M:/IC/TFE4152_project_2022/HDL/Memory_2/Memory/src/systemwave.awc' connected to 'M:/IC/TFE4152_project_2022/HDL/Memory_2/Memory/src/wave.asdb'.
+alog -O2 -sve   -work Memory $dsn/src/Memory.sv
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: CombinedSystem_tb CombinedSystem_tb_2 Memory_tb FSM_tb Decoder_tb.
+# $root top modules: CombinedSystem_tb FSM_tb Decoder_tb Memory_tb CombinedSystem_tb_2.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim -O5 -L memory -PL memory +accb +accr +access +r CombinedSystem_tb_2
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'CombinedSystem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'FSM' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Decoder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'MemoryModule' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'FlipFlop' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Bitcell' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'SrLatch' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.9 [s]
+# SLP: Finished : 1.0 [s]
+# SLP: 493 (99.20%) primitives and 4 (0.80%) other processes in SLP
+# SLP: 942 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5826 kB (elbread=1026 elab2=4655 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location M:\IC\TFE4152_project_2022\HDL\Memory_2\Memory\src\wave.asdb
+#  15.24, lørdag 19. november 2022
+#  Simulation has been initialized
+#  Selected Top-Level: CombinedSystem_tb_2 (CombinedSystem_tb_2)
+# Waveform file 'M:/IC/TFE4152_project_2022/HDL/Memory_2/Memory/src/systemwave.awc' connected to 'M:/IC/TFE4152_project_2022/HDL/Memory_2/Memory/src/wave.asdb'.
+# 6 signal(s) traced.
+# WAVEFORM: 1 signal(s) removed.
+# 11 signal(s) traced.
+# WAVEFORM: 11 signal(

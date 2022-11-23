@@ -1,0 +1,81 @@
+[aimspice]
+[description]
+2253
+Combined version of the different improvements. Made by Sindre Nordtveit and Mathias Bjoonnes
+
+*Include the gpdk90nm_tt to your project
+*.include Resources\gpdk90nm\gpdk90nm_ff.cir
+*.include Resources\gpdk90nm\gpdk90nm_ss.cir
+*.include Resources\gpdk90nm\gpdk90nm_sf.cir
+*.include Resources\gpdk90nm\gpdk90nm_fs.cir
+.include Resources\gpdk90nm\gpdk90nm_tt.cir
+
+*NMOS params
+.param L_nmos = 150n
+.param W_nmos = 150n
+*PMOS params
+.param L_pmos = 150n
+.param W_pmos = 250n
+
+
+*Include subcircuits
+.include Subcircuits\not_gate.cir
+*.include Subcircuits\improved_not_gate.cir
+.include Subcircuits\nand_gate.cir
+.include Subcircuits\and_gate.cir
+.include Subcircuits\nand3_gate.cir
+.include Subcircuits\and3_gate.cir
+
+.param voltage = 0.12V
+
+Vdd V_main 0 DC voltage
+
+*Name		input 	input		output		V_in	gnd	type of gate
+
+Xnot_read	read 		write 				V_main 0 	not_gate 
+Xenable 	sel 		write 	enable 		V_main 0 	and_gate
+Xset 		enable 	input 	set 			V_main 0 	nand_gate
+Xreset 	enable 	set 		reset			V_main 0 	nand_gate
+
+Xtop_latch 	set 		q_not 	q 			V_main 0 	nand_gate
+Xbot_latch 	reset	 	q 		q_not 		V_main 0 	nand_gate
+
+*Xout 		read		sel		q	     output V_main 0    and3_gate
+Xqandsel 	q		sel 		q_and_sel		V_main 0 and_gate
+Xout 		read		q_and_sel 	output 		V_main 0 and_gate	
+
+Vinput input 0 	pulse	(0 voltage 0ps 5ps 5ps 10us 20us)
+Vread read 0 	pulse	(0 voltage 0ps 5ps 5ps 5us  10us)
+Vselect sel 0	pulse	(0 voltage 0ps 5ps 5ps 20us 40us)
+
+*Plot the different variables
+.plot V(read)	!1.2 0
+.plot V(input)	!1.2 0
+.plot V(sel)	!1.2 0
+.plot V(output) 	!1.2 0 
+.plot V(q)		!1.2 0 
+.plot I(Vdd) 	!1n -10n
+
+*Extract the values from inside the stable interval
+.extract tran label="111" 	file=Data\best0.txt		min(I(Vdd),41u,42u)
+.extract tran label="110"	file=Data\best0.txt	 	min(I(Vdd),46u,47u)
+.extract tran label="101"	file=Data\best0.txt		min(I(Vdd),51u,52u)
+.extract tran label="100" 	file=Data\best0.txt		min(I(Vdd),56u,57u)
+.extract tran label="011" 	file=Data\best0.txt		min(I(Vdd),61u,62u)
+.extract tran label="010" 	file=Data\best0.txt		min(I(Vdd),66u,67u)
+.extract tran label="001" 	file=Data\best0.txt		min(I(Vdd),71u,72u)
+.extract tran label="000"	file=Data\best0.txt		min(I(Vdd),76u,77u)
+[options]
+3
+Temp 0
+Trtol 0.01
+Method Gear
+[tran]
+10ps
+80us
+X
+X
+0
+[ana]
+4 0
+[end]

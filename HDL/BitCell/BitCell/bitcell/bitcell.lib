@@ -1,20 +1,21 @@
-timestamp=1666869905801
+timestamp=1668634519154
 
 [~A]
 LastVerilogToplevel=test
 M:/IC/TFE4152_project_2022/HDL/BitCell/bitcell/src/bitcell.sv=0*182183*182940
 M:/IC/TFE4152_project_2022/HDL/BitCell/bitcell/src/sr_latch.sv=0*171709*172259
 M:/IC/TFE4152_project_2022/HDL/BitCell/bitcell/src/sr_latch.sv_bitcell.sv=0*160993*161954
-ModifyID=95
+M:/IC/TFE4152_project_2022/HDL/BitCell/bitcell/src/test.sv=0*187347*187701
+ModifyID=96
 Version=73
 m:/IC/TFE4152_project_2022/HDL/BitCell/bitcell/src/bitcell.sv=0*184319*185076
 m:/IC/TFE4152_project_2022/HDL/BitCell/bitcell/src/test.sv=0*186028*186382
 
 [$root]
-A/$root=22|||1*409641
-BinI32/$root=3*182934
-SLP=3*183038
-Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|c73a565f2ade592f8ac1c68f484c92164d0fbeac840f63103a7a8ae672a4edb6
+A/$root=22|||1*410736
+BinI32/$root=3*183300
+SLP=3*183404
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|c73a565f2ade592f8ac1c68f484c9216b1451b2774a1fe42fd50f8a6caf7cbce
 
 [SrLatch]
 A/SrLatch=22|./../src/sr_latch.sv|3|1*377136
@@ -66,19 +67,19 @@ SLP=3*182623
 Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|963e9ec3f83e887f56d593bbfc65e9cb5259b4c529c2f5b0b572391aa8870a4b0f13fa73d88defebcb447666485ea5de
 
 [test]
-A/test=22|./../src/test.sv|1|1*410063
-BinI32/test=3*183106
+A/test=22|./../src/test.sv|1|1*411158
+BinI32/test=3*183472
 R=./../src/test.sv|1
-SLP=3*183209
-Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|e1f76c805e2c0a9a3d36a8be8882f206fca17226658ef1be4082aded52f87cb5
+SLP=3*183575
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|e1f76c805e2c0a9a3d36a8be8882f206b22fc9af3c060168ae078fd592b9fd77
 
 [~MFT]
-0=4|0bitcell.mgf|186382|109606
-1=3|1bitcell.mgf|410063|401130
-3=6|3bitcell.mgf|183209|178955
+0=4|0bitcell.mgf|187701|109606
+1=4|1bitcell.mgf|411158|402225
+3=8|3bitcell.mgf|183575|179321
 
 [~U]
-$root=12|0*185618|
+$root=12|0*186937|
 SrLatch=12|0*171346|
 bitcell=12|0*183696|
 simple_bitcell=12|0*183910||0x10
@@ -86,4 +87,4 @@ sr_latch=12|0*2777||0x10
 sr_latch_tb=12|0*171545||0x10
 st_latch_tb=12|0*2957||0x10
 tb_bitcell=12|0*184148||0x10
-test=12|0*185848||0x10
+test=12|0*187167||0x10

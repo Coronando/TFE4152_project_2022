@@ -1,19 +1,19 @@
 [aimspice]
 [description]
-1352
+1666
 Bitcell by Sindre Nordtveit and Mathias Bj�nnes.
 
 *Include the gpdk90nm_tt to your project
-.include Resources\gpdk90nm\gpdk90nm_ff.cir
+.include Resources\gpdk90nm\gpdk90nm_tt.cir
 
 *Set parameters
 .param WL = 2
 *NMOS params
-.param L_nmos = 300n
-.param W_nmos = 300n
+.param L_nmos = 200n
+.param W_nmos = 200n
 *PMOS params
-.param L_pmos = 300n
-.param W_pmos = 600n
+.param L_pmos = 200n
+.param W_pmos = 250n
 
 
 *Include subcircuits
@@ -21,7 +21,9 @@ Bitcell by Sindre Nordtveit and Mathias Bj�nnes.
 .include Subcircuits\nand_gate.cir
 .include Subcircuits\and_gate.cir
 
-Vdd V_main 0 DC 0.4V
+.param voltage = 0.08V
+
+Vdd V_main 0 DC voltage
 
 *Name		input 	intput	output		V_in	gnd	type of gate
 
@@ -36,30 +38,44 @@ Xbot_latch 	reset	 	q 		q_not 		V_main 0 	nand_gate
 Xq_and_sel 	sel 		q 		sel_and_q 		V_main 0 	and_gate
 Xout 		read 		sel_and_q 	output 		V_main 0 	and_gate
 
-Vinput input 0 pulse(0 1 1ps 0.1ps 0.1ps 10ns 20ns)
-Vread read 0 pulse(0 1 1ps 0.1ps 0.1ps 5ns 10ns)
-Vselect sel 0 pulse(0 1 1ps 0.1ps 0.1ps 20ns 40ns)
-*Vinput input 0 pulse(0 1 1ps 0.1ps 0.1ps 11ns 21ns)
-*Vread read 0 pulse(0 1 1ps 0.1ps 0.1ps 5ns 10ns)
-*Vsel sel 0 DC 1.0V
+Vinput input 0 	pulse	(0 voltage 0ps 5ps 5ps 10us 20us)
+Vread read 0 	pulse	(0 voltage 0ps 5ps 5ps 5us  10us)
+Vselect sel 0	pulse	(0 voltage 0ps 5ps 5ps 20us 40us)
 
-.plot V(input) 
-.plot V(read)
-.plot V(sel)
-.plot V(output) 
-.plot V(q)
+*C1 V_main 0 1fF IC=0V
 
-*.plot V(q_not)
-*.plot V(q)
 
-*.plot V(input_a) V(input_b) V(output)
+
+.plot V(read)	!0.5 0
+.plot V(input)	!0.5 0
+.plot V(sel)	!0.5 0
+.plot V(output) 	!0.5 0 
+.plot V(q)		!0.5 0 
+.plot I(Vdd) 	!-0n -20n
+
+.extract tran label=111 		min(I(Vdd),41u,42u)
+.extract tran label=110		 	min(I(Vdd),46u,47u)
+.extract tran label=101 		min(I(Vdd),51u,52u)
+.extract tran label=100 		min(I(Vdd),56u,57u)
+.extract tran label=011 		min(I(Vdd),61u,62u)
+.extract tran label=010 		min(I(Vdd),66u,67u)
+.extract tran label=001 		min(I(Vdd),71u,72u)
+.extract tran label=000			min(I(Vdd),76u,77u)
+
 [options]
-2
+3
 Tnom 70
 Temp 70
+Method Gear
+[dc]
+1
+Vinput
+0
+0.5
+1mV
 [tran]
-0.001ps
-80ns
+0.1ns
+80us
 X
 X
 0

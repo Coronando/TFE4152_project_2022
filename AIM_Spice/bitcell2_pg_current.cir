@@ -1,10 +1,10 @@
 [aimspice]
 [description]
-1502
+1504
 Bitcell2 Current Test by Sindre Nordtveit and Mathias Bj�nnes.
 
 *Include the gpdk90nm_tt to your project
-.include Resources\gpdk90nm\gpdk90nm_tt.cir
+.include Resources\gpdk90nm\gpdk90nm_ss.cir
 
 *Set parameters
 .param WL = 2
@@ -24,7 +24,7 @@ Bitcell2 Current Test by Sindre Nordtveit and Mathias Bj�nnes.
 .include Subcircuits\and3_gate.cir
 .include Subcircuits\and_pg_gate.cir
 
-.param voltage = 0.6V
+.param voltage = 0.3V
 *.param voltage = 1V
 
 Vdd V_main 0 DC voltage
@@ -39,7 +39,7 @@ Xreset 	    enable 	    set     reset		V_main 0 	nand_gate
 Xtop_latch 	set 		q_not 	q 			V_main 0 	nand_gate
 Xbot_latch 	reset	 	q 		q_not 		V_main 0 	nand_gate
 
-Xout 		read q sel output V_main 0    and3_gate 		
+Xout 		read q sel output V_main 0    and_pg_gate 		
 
 *Vinput input 0 DC voltage 
 *.connect input 0
@@ -48,9 +48,9 @@ Xout 		read q sel output V_main 0    and3_gate
 *Vsel sel 0 DC voltage
 *.connect sel 0
 
-Vinput input 0 	pulse	(0 voltage 0ps 1ps 1ps 10ns 20ns)
-Vread read 0 	pulse	(0 voltage 0ps 1ps 1ps 5ns  10ns)
-Vselect sel 0	pulse	(0 voltage 0ps 1ps 1ps 20ns 40ns)
+Vinput input 0 	pulse	(0 voltage 0ps 1ps 1ps 10us 20us)
+Vread read 0 	pulse	(0 voltage 0ps 1ps 1ps 5us  10us)
+Vselect sel 0	pulse	(0 voltage 0ps 1ps 1ps 20us 40us)
 
 .plot V(input) 
 .plot V(read)
@@ -64,8 +64,8 @@ Vselect sel 0	pulse	(0 voltage 0ps 1ps 1ps 20ns 40ns)
 
 *.plot V(input_a) V(inp
 [tran]
-0.01ps
-160ns
+0.1ns
+80us
 X
 X
 0

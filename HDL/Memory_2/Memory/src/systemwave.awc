@@ -1,0 +1,207 @@
+<config>
+    <version>
+        2.0
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="LOCAL___09e778636afd072e0b00">wave.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+                AAAAFAACwAwAAAAQCRsBBgGPAAAQPAAAZtQRAAAA
+|
+        </signallist>
+    </signallists>
+    <propertybases>
+        <propertybase id="0">
+            <propclass name="radix">
+            </propclass>
+            <propclass name="mode">
+            </propclass>
+            <propclass name="notation">
+                <property first="2" last="12">
+                1
+                </property>
+                <property first="14" last="14">
+                1
+                </property>
+                <property first="19" last="24">
+                1
+                </property>
+                <property first="29" last="29">
+                1
+                </property>
+                <property first="40" last="40">
+                1
+                </property>
+                <property first="58" last="58">
+                1
+                </property>
+                <property first="124" last="125">
+                1
+                </property>
+                <property first="135" last="135">
+                1
+                </property>
+                <property first="145" last="145">
+                1
+                </property>
+                <property first="155" last="168">
+                1
+                </property>
+                <property first="173" last="178">
+                1
+                </property>
+                <property first="183" last="183">
+                1
+                </property>
+                <property first="193" last="194">
+                1
+                </property>
+                <property first="212" last="212">
+                1
+                </property>
+                <property first="278" last="279">
+                1
+                </property>
+                <property first="289" last="289">
+                1
+                </property>
+                <property first="299" last="299">
+                1
+                </property>
+            </propclass>
+            <propclass name="reverse">
+            </propclass>
+            <propclass name="bold">
+            </propclass>
+            <propclass name="row_height">
+            </propclass>
+            <propclass name="color">
+            </propclass>
+            <propclass name="compared">
+            </propclass>
+            <propclass name="analog_bounds">
+                <property first="2" last="12">
+                [-1,1]
+                </property>
+                <property first="14" last="14">
+                [-1,1]
+                </property>
+                <property first="19" last="24">
+                [-1,1]
+                </property>
+                <property first="29" last="29">
+                [-1,1]
+                </property>
+                <property first="40" last="40">
+                [-1,1]
+                </property>
+                <property first="58" last="58">
+                [-1,1]
+                </property>
+                <property first="124" last="125">
+                [-1,1]
+                </property>
+                <property first="135" last="135">
+                [-1,1]
+                </property>
+                <property first="145" last="145">
+                [-1,1]
+                </property>
+                <property first="155" last="168">
+                [-1,1]
+                </property>
+                <property first="173" last="178">
+                [-1,1]
+                </property>
+                <property first="183" last="183">
+                [-1,1]
+                </property>
+                <property first="193" last="194">
+                [-1,1]
+                </property>
+                <property first="212" last="212">
+                [-1,1]
+                </property>
+                <property first="278" last="279">
+                [-1,1]
+                </property>
+                <property first="289" last="289">
+                [-1,1]
+                </property>
+                <property first="299" last="299">
+                [-1,1]
+                </property>
+            </propclass>
+            <propclass name="fixedpoint">
+            </propclass>
+            <propclass name="floating_encoding">
+            </propclass>
+            <propclass name="floating_notation">
+            </propclass>
+            <propclass name="floating_precision">
+            </propclass>
+            <propclass name="rounding_method">
+            </propclass>
+            <propclass name="aliasname">
+            </propclass>
+        </propertybase>
+    </propertybases>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="307389" />
+            <pref name="Start Time" value="0" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="267000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="-1" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+    <virtualsources>
+        <virtualnamedrows>
+        </virtualnamedrows>
+        <virtualbuses>
+            <virtualbus id="155" name="FSM" group="true" analog="false">
+                    AAAAEA0AAJwBAwE/AQMBAAAHAQOzEQAA
+|
+            </virtualbus>
+            <virtualbus id="167" name="Decoder" group="true" analog="false">
+                    AAAADQoAAKgFAwEfAQMFAACiEQAA
+|
+            </virtualbus>
+            <virtualbus id="193" name="Memory_module" group="true" analog="false">
+                    AAAACwgEBMIWwgEBNgo+AREAAAAA
+|
+            </virtualbus>
+        </virtualbuses>
+        <virtualalias>
+        </virtualalias>
+        <virtualbusalias>
+        </virtualbusalias>
+        <virtualanalogalias>
+                AAAAkwk//5yFAAAQhAAAEIfdAIXdAINMAgT//7wAABC9RAJ9AL/cAPwBpARsB+wGKg0BjkQHfwL//4ZE        CWQDfABkAgWaAAAQmwAAEH0AnUwKC/wAOgEAEJoBABCZAAAQEQAA
+|
+        </virtualanalogalias>
+        <virtualanalogbusalias>
+                AAAAUgAPPPOojAAAEIgAABAenwAAEJsAABABhgAAEM888QAAEAL4XQHpWQEHcAMAA14BABAC88+aAQAQ        rQEAEAG3AQAQvGABCbQBABCrAQAQQAAhAREAAAAA
+|
+        </virtualanalogbusalias>
+        </virtualsources>
+</config>

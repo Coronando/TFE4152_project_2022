@@ -20,23 +20,24 @@ endmodule
 //3 to 8 decoder
 //The decoder outputs a logic high on the given adress if as long as 
 //not_sleep is HIGH, else it outputs only zeros and no words are selected.
-module Decoder(input logic [2:0]adr, output logic not_sleep, [7:0]sel);
+module Decoder(input logic enable, [2:0]adr, output logic [7:0]sel);
 	//And not_sleep with all the adr-lines and the output from the first and gate
 	wire [2:0]in;
 
 	//Theese extra and gates make sure that the address is set to 000 if
 	//the not_sleep signal is high. The latter gate make sure the output there is also 0.
-	and(in[0], adr[0], not_sleep);
-	and(in[1], adr[1], not_sleep);
-	and(in[2], adr[2], not_sleep);
+	and(in[0], adr[0], enable);
+	and(in[1], adr[1], enable);
+	and(in[2], adr[2], enable);
 	
 	wire a0_not, a1_not, a2_not, first_and;
+	//The next to gates make sure that 000 appears on the output of not_sleep is low.
 	not(a0_not, in[0]);
 	not(a1_not, in[1]);
 	not(a2_not, in[2]);
-	//The next to gates make sure that 000 appears on the output of not_sleep is low.
 	and(first_and, a0_not, a1_not, a2_not);
-	and(sel[0], first_and, not_sleep)
+	//Normal decoder gates below.
+	and(sel[0], first_and, enable);
 	and(sel[1], in[0], a1_not, a2_not);
 	and(sel[2], a0_not, in[1], a2_not);
 	and(sel[3], in[0], in[1], a2_not);
@@ -71,23 +72,98 @@ module MemoryModule(input logic rw, [7:0]inputs, [7:0]sel, output logic [7:0]out
 	endgenerate
 endmodule
 
+//Declare a FlipFlop to reduce clutter in the code
+module FlipFlop(input logic clk, input logic d, output logic q);
+	always_ff @(posedge clk) begin
+		q <= d;
+	end
+endmodule
 
+module FSM(input logic read, write, clk, output logic rw, enable);
+	wire rw_not, rd, wd, rq, wq, wq_not;
+	//The read and write are nanded together
+	nand(rw_not, read, write);
+	//This is combined with read and write to get the correct input to the flipflops
+	and(rd, rw_not, read);
+	and(wd, rw_not, write);
+	//Instantiate the flipflops
+	FlipFlop my_rd(.clk(clk),.d(rd),.q(rq));
+	FlipFlop my_wd(.clk(clk),.d(wd),.q(wq));
+	//The output from the flipflops are combined to get the correct output in the 
+	//different states
+	not(wq_not, wq);
+	//Make the output rw
+	and(rw, rq, wq_not);
+	//Make the enable signal
+	or(enable, rq, wq);
+endmodule
 
+module CombinedSystem(input logic read, write, clk, [2:0]adr, [7:0]inputs, output logic [7:0]outputs);
+	wire rw, enable;
+	wire [7:0]sel;
 
+	//Instantiate the FSM
+	FSM my_fsm(.read(read),.write(write),.clk(clk),.rw(rw),.enable(enable));
+	//Instantiate the decoder
+	Decoder my_decoder(.adr(adr),.sel(sel),.enable(enable));
+	//Instantiate the memory module
+	MemoryModule my_memory(.inputs(inputs),.sel(sel),.rw(rw),.outputs(outputs));
+endmodule
+
+module CombinedSystem_tb();
+	logic [7:0]inputs, outputs;
+	logic read, write, clk;
+	logic [2:0]adr;
+	// always #5ns begin
+	// 	clk = ~clk;
+	// end
+	//Instantiate the combined system
+	//CombinedSystem my_system(.read(read),.write(write),.clk(clk),.adr(adr),.inputs(inputs),.outputs(outputs));
+
+	initial begin
+		clk = 0;
+		//write 1 to the first row in the memory and read it out
+		inputs = 8'b00000001;
+		adr = 3'b000;
+		read = 1'b0;
+		write = 1'b1;
+		#12ns;
+		read = 1'b1;
+		write = 1'b0;
+		#8ns;
+		//Then write 2 to the second row and read it out
+		inputs = 8'b00000010;
+		adr = 3'b001;
+		read = 1'b0;
+		write = 1'b1;
+		#12ns;
+		read = 1'b1;
+		write = 1'b0;
+		#8ns;
+		//The read from the first row again
+		inputs = 8'b00011001;
+		adr = 3'b000;
+		read = 1'b1;
+		write = 1'b0;
+		#11ns;
+	end
+endmodule
+
+/*
 module Memory_tb();
 	logic [7:0]inputs, outputs;
-	logic rw, not_sleep;
+	logic rw, enable;
 	logic [2:0]adr;
 	wire [7:0]sel;
 
 	//Instantiate the decoder
-	Decoder my_decoder(.adr(adr),.sel(sel));
+	Decoder my_decoder(.enable(enable),.adr(adr),.sel(sel));
 
 	//Instantiate the memory module
 	MemoryModule my_memory(.inputs(inputs),.sel(sel),.rw(rw),.outputs(outputs));
 	initial begin
 		//write 1 to the first row in the memory and read it out
-		not_sleep = 1'b1;
+		enable = 1'b1;
 		inputs = 8'b00000001;
 		adr = 3'b000;
 		rw = 1'b0;
@@ -108,25 +184,39 @@ module Memory_tb();
 		#10;
 
 	end
-endmodule
+endmodule*/
 
-//Declare a FlipFlop to reduce clutter in the code
-module FlipFlop(input logic clk, input logic d, output logic q);
-	always_ff @(posedge clk) begin
-		q <= d;
+//Testbench for the FSM
+module FSM_tb();
+	logic read, write, clk, rw, enable;
+	// always #5ns begin
+	// 	clk = ~clk;
+	// end
+	//Instantiate the FSM
+	FSM my_fsm(.read(read),.write(write),.clk(clk),.rw(rw),.enable(enable));
+	initial begin
+		clk = 0;
+		//write 1 to the first row in the memory and read it out
+		read = 1'b0;
+		write = 1'b1;
+		#10;
+		read = 1'b1;
+		write = 1'b0;
+		#10;
+		//Then write 2 to the second row and read it out
+		read = 1'b0;
+		write = 1'b1;
+		#10;
+		read = 1'b1;
+		write = 1'b0;
+		#10;
+		//The read from the first row again
+		read = 1'b0;
+		write = 1'b0;
+		#10;
+		//Try the illegal state
+		read = 1'b1;
+		write = 1'b1;
+		#10;
 	end
-endmodule
-
-module FSM(input logic rw, enable, clock, [2:0]adr, [7:0]i, output logic [7:0]o);
-	//Instantiate the decoder
-	Decoder my_decoder(.adr(adr),.sel(sel));
-	//Instantiate the memory module
-	MemoryModule my_memory(.inputs(inputs),.sel(sel),.rw(rw),.outputs(outputs));
-
-	//Gate logic 
-
-	//Two flipflops to keep track of the state
-	FlipFlop f1(.clk(clock),.d(state2),.q(state1));
-	FlipFlop f2(.clk(clock),.d(state3),.q(state2));
-
 endmodule

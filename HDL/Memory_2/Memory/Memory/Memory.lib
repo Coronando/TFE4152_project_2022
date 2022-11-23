@@ -1,0 +1,118 @@
+timestamp=1669048397553
+
+[~A]
+LastVerilogToplevel=Decoder_tb
+M:/IC/TFE4152_project_2022/HDL/Memory_2/Memory/src/Memory.sv=0*98934*101179
+ModifyID=21
+Version=73
+m:/IC/TFE4152_project_2022/HDL/Memory/Memory/src/Memory.sv=0*6144*7827
+
+[$root]
+A/$root=22|||1*373073
+BinI32/$root=3*168839
+SLP=3*168943
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|c73a565f2ade592f8ac1c68f484c92168dab152d53ad8f0ae8d31636a3366f2d
+
+[Bitcell]
+A/Bitcell=22|./../src/Memory.sv|10|1*374545
+BinI32/Bitcell=3*169222
+R=./../src/Memory.sv|10
+SLP=3*169328
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|6bc921a42ed301c6ca839a8d2a751f6226527262ddaa47cb266f3a3c4d9b973a8bd11036ee6a38e7f824042dad93c3fa
+
+[CombinedSystem]
+A/CombinedSystem=22|./../src/Memory.sv|101|1*385944
+BinI32/CombinedSystem=3*172072
+R=./../src/Memory.sv|101
+SLP=3*172185
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|7cc628abe4e4bbd72181e1a6df077ca6e9eaa1c22ae5004b0a75599694feb65f41670bbf3de112d34ea089ad096afeb0
+
+[CombinedSystem_tb]
+A/CombinedSystem_tb=22|./../src/Memory.sv|119|1*387798
+BinI32/CombinedSystem_tb=3*172335
+R=./../src/Memory.sv|119
+SLP=3*173698
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|7cc628abe4e4bbd72181e1a6df077ca61fe3a94252d11081154d280266412377426f0d2ae3097b1b3aaf2bc4a808d389
+
+[CombinedSystem_tb_2]
+A/CombinedSystem_tb_2=22|./../src/Memory.sv|159|1*389379
+BinI32/CombinedSystem_tb_2=3*174200
+R=./../src/Memory.sv|159
+SLP=3*177623
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|7cc628abe4e4bbd72181e1a6df077ca664c4e2f981f69c89c678d5fffbcaa055491db68368686205d779e1c235407620
+
+[Decoder]
+A/Decoder=22|./../src/Memory.sv|23|1*376533
+BinI32/Decoder=3*169432
+R=./../src/Memory.sv|23
+SLP=3*169538
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|1c17319664848e6a353a8c8fab86b23826527262ddaa47cb266f3a3c4d9b973a8bd11036ee6a38e7f824042dad93c3fa
+
+[Decoder_tb]
+A/Decoder_tb=22|./../src/Memory.sv|390|1*393803
+BinI32/Decoder_tb=3*181643
+R=./../src/Memory.sv|390
+SLP=3*182503
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|f542e71f241296ed94087efd69609afc0e038acaab408fb8e8ad49b206daf99c879c773ebfe33e6b887ffa283632c038
+
+[FSM]
+A/FSM=22|./../src/Memory.sv|82|1*383797
+BinI32/FSM=3*171871
+R=./../src/Memory.sv|82
+SLP=3*171973
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|906700607a7a928e22a805630cb51601aabec62cb08ff3878eee1147a9fa5e44
+
+[FSM_tb]
+A/FSM_tb=22|./../src/Memory.sv|352|1*392557
+BinI32/FSM_tb=3*180035
+R=./../src/Memory.sv|352
+SLP=3*181284
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|bc1c4e2eb586f1cc5f7b2d05600d8d754d01921329865ffb47d662a98d7f06d7
+
+[FlipFlop]
+A/FlipFlop=22|./../src/Memory.sv|76|1*382887
+BinI32/FlipFlop=3*171421
+R=./../src/Memory.sv|76
+SLP=3*171703
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|14eef5e9089f7699ec7f26dc42d464885282911f305f902e3b8247fe123db041559032af43ec2d83a4891bbd54b7e321
+
+[MemoryModule]
+A/MemoryModule=22|./../src/Memory.sv|51|1*379670
+BinI32/MemoryModule=3*169888
+R=./../src/Memory.sv|51
+SLP=3*170882
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|e5f02fa174e4c1195fa4559372b5513de4465cbc5ef218114bdb069045f6b9a7650424da1ddadea470d74b99ec92b666
+
+[Memory_tb]
+A/Memory_tb=22|./../src/Memory.sv|315|1*390968
+BinI32/Memory_tb=3*178964
+R=./../src/Memory.sv|315
+SLP=3*179647
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|456e480640255f9b15aabcad41cf8b7bfe08ec5dd4a9166b7b73853feca178068d22ed88cc97ce696ef96a6590ed5105
+
+[SrLatch]
+A/SrLatch=22|./../src/Memory.sv|4|1*373495
+BinI32/SrLatch=3*169011
+R=./../src/Memory.sv|4
+SLP=3*169117
+Version=10.2.3312.5682  (Windows)|00000003789cd3f5370200015a00af|280a7c12649faaf54f367e8792c3c3be26527262ddaa47cb266f3a3c4d9b973a8bd11036ee6a38e7f824042dad93c3fa
+
+[~MFT]
+0=17|0Memory.mgf|101179|47154
+1=26|1Memory.mgf|393803|373073
+3=52|3Memory.mgf|182503|168839
+
+[~U]
+$root=12|0*96153|
+Bitcell=12|0*96614|
+CombinedSystem=12|0*97708|
+CombinedSystem_tb=12|0*98000||0x10
+CombinedSystem_tb_2=12|0*98213||0x10
+Decoder=12|0*96828|
+Decoder_tb=12|0*98775||0x10
+FSM=12|0*97480|
+FSM_tb=12|0*98608||0x10
+FlipFlop=12|0*97291|
+MemoryModule=12|0*97033|
+Memory_tb=12|0*98430||0x10
+SrLatch=12|0*96415|

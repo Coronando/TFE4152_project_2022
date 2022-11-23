@@ -1,6 +1,6 @@
 [aimspice]
 [description]
-1267
+1927
 Bitcell2 Current Test by Sindre Nordtveit and Mathias Bj�nnes.
 
 *Include the gpdk90nm_tt to your project
@@ -9,21 +9,23 @@ Bitcell2 Current Test by Sindre Nordtveit and Mathias Bj�nnes.
 *Set parameters
 .param WL = 2
 *NMOS params
-.param L_nmos = 300n
-.param W_nmos = 300n
+.param L_nmos = 150n
+.param W_nmos = 150n
 *PMOS params
-.param L_pmos = 300n
-.param W_pmos = 600n
+.param L_pmos = 150n
+.param W_pmos = 250n
 
 
 *Include subcircuits
+
 .include Subcircuits\not_gate.cir
 .include Subcircuits\nand_gate.cir
 .include Subcircuits\and_gate.cir
 .include Subcircuits\nand3_gate.cir
 .include Subcircuits\and3_gate.cir
 
-.param voltage = 0.8V
+*.param voltage = 0.06V !Lowest that works
+.param voltage = 0.1V
 
 Vdd V_main 0 DC voltage
 
@@ -39,21 +41,54 @@ Xbot_latch 	reset	 	q 		q_not 		V_main 0 	nand_gate
 
 Xout 		read		sel		q	     output V_main 0    and3_gate 		
 
-Vinput input 0 DC voltage
+*Vinput input 0 DC voltage
 *.connect input 0
-Vread read 0 DC voltage 
+*Vread read 0 DC voltage 
 *.connect read 0
-Vsel sel 0 DC voltage 
+*Vsel sel 0 DC voltage 
 *.connect sel 0
 
-.plot V(input) 
-.plot V(read)
-.plot V(sel)
-.plot V(output) 
-.plot V(q)
+Vinput input 0 	pulse	(0 voltage 0ps 5ps 5ps 10us 20us)
+Vread read 0 	pulse	(0 voltage 0ps 5ps 5ps 5us  10us)
+Vselect sel 0	pulse	(0 voltage 0ps 5ps 5ps 20us 40us)
+
+
+.plot V(read)	!0.5 0
+.plot V(input)	!0.5 0
+.plot V(sel)	!0.5 0
+.plot V(output) 	!0.5 0 
+.plot V(q)		!0.5 0 
+.plot I(Vdd) 	!-0n -3n
 
 *.plot V(q_not)
 *.plot V(q)
 
 *.plot V(input_a) V(input_b) V(output)
+
+.extract tran label=111 		min(I(Vdd),41u,42u)
+.extract tran label=110		 	min(I(Vdd),46u,47u)
+.extract tran label=101 		min(I(Vdd),51u,52u)
+.extract tran label=100 		min(I(Vdd),56u,57u)
+.extract tran label=011 		min(I(Vdd),61u,62u)
+.extract tran label=010 		min(I(Vdd),66u,67u)
+.extract tran label=001 		min(I(Vdd),71u,72u)
+.extract tran label=000			min(I(Vdd),76u,77u)
+[options]
+2
+Trtol 0.1
+Method Gear
+[dc]
+1
+Vread
+0
+0.2
+0.0001
+[tran]
+0.1ns
+80us
+X
+X
+0
+[ana]
+4 0
 [end]
