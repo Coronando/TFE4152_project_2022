@@ -57,7 +57,7 @@ def read_data(file_name):
 # plt.show()
 
 # Function to plot the data from the file and save it to the Plots folder
-def plot_and_save_data(file_name):
+def plot_and_save_data(file_name, folder):
     data = read_data(file_name)
     names = list(data.keys())
     values = list(data.values())
@@ -72,7 +72,26 @@ def plot_and_save_data(file_name):
     plt.ylim(0, 52*10**-9)
     # Change the y ticks to be in nano amps
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x*10**9))))
-    plt.savefig('Python_helpers/Plots2/' + file_name.split('/')[-1].split('.')[0] + '.png')
+    plt.savefig('Python_helpers/' + folder + '/' + file_name.split('/')[-1].split('.')[0] + '.png')
+    #plt.show()
+
+# Plot and save data but in different scale for 0 degrees
+def plot_and_save_data_0(file_name, folder):
+    data = read_data(file_name)
+    names = list(data.keys())
+    values = list(data.values())
+    corners = ["ff", "ss", "sf", "fs", "tt"]
+    marker = ["o", "s", "v", "x", "D"]
+    fig, ax = plt.subplots()
+    for i in range(5):
+        ax.plot(names, [item[i] for item in values], label=corners[i], marker=marker[i])
+    ax.legend(mode = "expand", ncol = 3)
+    plt.ylabel('Current (nA)')
+    plt.xlabel('Combinations')
+    plt.ylim(0, 12*10**-9)
+    # Change the y ticks to be in nano amps
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x*10**9))))
+    plt.savefig('Python_helpers/' + folder + '/' + file_name.split('/')[-1].split('.')[0] + '.png')
     #plt.show()
 
 if __name__ == "__main__":
@@ -80,7 +99,14 @@ if __name__ == "__main__":
     file_start = ['baseline', 'improvedwl', 'reducetrans', 'best']
     file_end = ['0.txt', '27.txt', '70.txt']
 
+    # for start in file_start:
+    #     for end in file_end:
+    #         file_name = path_to_data + start + end
+    #         plot_and_save_data(file_name, 'Plots')
+
+    # Plot the 0 degrees data in a different scale
+    # for all the file starts
     for start in file_start:
-        for end in file_end:
-            file_name = path_to_data + start + end
-            plot_and_save_data(file_name)
+        file_name = path_to_data + start + file_end[0]
+        plot_and_save_data_0(file_name, 'Plots_scaled')
+
